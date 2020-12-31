@@ -1,0 +1,64 @@
+
+
+
+<?php
+  include "connection.php";
+  include "top.php";
+?>
+<!DOCTYPE html>
+<html>
+<head>
+
+        <title> Book List</title>
+
+        <link rel="stylesheet" type="text/css" href="styleforbookimp.css">
+    <meta charset="utf-8">
+    </head>
+ <body>
+            <div class= "container">
+                <h1>CLASSIC LITERATURE</h1>
+                 <div class = "book">
+                    <div class = "icon">
+                        <img src = "images/cat/classi.jpg"  alt= ""  />
+                </div>
+                <div class = "content">
+                <h2>Kingdom of Ash</h2>
+                <p> <I> Official synopsis. Years in the making, Sarah J. Maas's #1 New York Times bestselling Throne of Glass series draws to an epic, unforgettable conclusion. Aelin Galathynius's journey from slave to king's assassin to the queen of a once-great kingdom reaches its heart-rending finale as war erupts across her world.
+.</I> </p>
+                <p> Details about the book: <br>  Author: by Sarah J Maas</p>
+                <span> More text about the book: </span>
+                <a href = "books for the web/Kingdom of Ash - Sarah J. Maas ( PDFDrive ).pdf">
+                <button> Read it</button>
+                </a>
+                </div>
+</div>
+
+
+            
+               
+               
+</div>
+<div class = "rate" style ="margin-top: -427px;">
+  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp
+  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp
+  <img src = "images/rate.jpg"  alt= ""  /> 
+  <br>
+  <br>
+            <p style= "color: #fff;"> Your Preferance is a good addition to keep smashing books in our store. <br> Click here &  exchange your experience about the books with others.. <br>
+        THANK YOU & KEEP READING......</p>
+            <a href = "rating/ratinghome.php">
+            <br>
+            <br>
+                <button style = "color: yellow;"> Rate here</button>
+                </a>
+                &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp
+                &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp
+                &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp
+                <a href = "MainCatergory.php">
+                <button style = "color: yellow;"> GO BACK</button>
+                </a>
+</div>     
+
+</div>
+ </body>
+</html>
