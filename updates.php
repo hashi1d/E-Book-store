@@ -1,7 +1,8 @@
 <?php
 
-include "connection.php";
+
 include "topnav.php";
+include "connection.php";
 
 ?>
 <!  DOCTYPE html>
@@ -14,7 +15,8 @@ include "topnav.php";
 body{
 
 height :650px;
-background-color:pink;
+background-image:url("images/pass.jpg");
+
 }
 
 .wrapper{
@@ -53,7 +55,11 @@ background-color:pink;
 <br>
 
   <button class = "btn btn-default"  type = "submit" name = "submit">Update </button>
+  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp
 </form>
+<a href = "login.php">
+    <button  class = "btn btn-default" style = "color: black; margin-left:0px; margin-top: 27px;"> BACK</button>
+</a>
 </div>
 </div>
 <?php

@@ -7,6 +7,12 @@
 <head>
 	<title>Edit profile</title>
 	<style type="text/css">
+	 body{
+		background-image: url("images/edit.jpg");
+		background-repeat: no-repeat;
+		
+		
+	 }
 		.form-control
 		{
 			width:250px;
@@ -24,9 +30,9 @@
 
 	</style>
 </head>
-<body style="background-color: pink;">
+<body >
 
-	<h2 style="text-align: center;color: #fff;">Edit Information</h2>
+	<h2 style="text-align: center;color: black;">Edit Information</h2>
 	<?php
 		
 		$sql = "SELECT * FROM reg WHERE username='$_SESSION[login_user]'";
@@ -45,8 +51,8 @@
 	?>
 
 	<div class="profile_info" style="text-align: center;">
-		<span style="color: black;">WELCOME</span>	
-		<h4 style="color: dark blue;"><?php echo $_SESSION['login_user']; ?></h4>
+		<span style="color: red;">WELCOME</span>	
+		<h4 style="color: white;"><?php echo $_SESSION['login_user']; ?></h4>
 	</div><br><br>
 	
 	<div class="form1">
