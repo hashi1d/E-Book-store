@@ -17,7 +17,7 @@
 	 body {
   font-family: "Lato", sans-serif;
   transition: background-color .5s;
-  background-color : pink;
+  background-image: url("images/bookicon01.jpg");
   color: #202aa2;
 }
 
@@ -117,17 +117,16 @@
 <br>
 <br>
   <div class = "one" ><a href="addbook.php">ADD BOOK</a></div>
-  <div class = "one" ><a href="book1.php">BOOK REQUEST</a></div>
-  <div class = "one" ><a href="#">BADGE REQUEST</a></div>
-  <div class = "one" ><a href=".php">DELETE BOOK</a></div>
-  <div class = "one" ><a href="#">HELP</a></div>
+<div class = "one" ><a href="MainCatergory.php">VIEW BOOKS</a></div> 
+  <div class = "one" ><a href="contactus.php">HELP</a></div>
 </div>
 
 <div id="main">
   
   <span style="font-size:30px;cursor:pointer; color: black"  onclick="openNav()">&#9776; open</span>    <!-- this is for creating side nav only inside add book pag -->
    <div class = "container"  ; style = "text-align:center;">  <!-- style text-align crz t get button to the center -->
-   <h3 style ="color : black; font-family :  Lucida Console; text-align : center;">  ADD NEW BOOKS </h2>
+   <h3 style ="color : black; font-family :  Lucida Console; text-align : center;">  ADD NEW BOOKS </h3>
+   <h4 style ="color:red; font-family :  Lucida Console; text-align : center;"> Here you can mention any book that need to add in to the book list. we'll check your requirments & add them soon. </h4>
    <form class="b"  action="" method="post">
     
         

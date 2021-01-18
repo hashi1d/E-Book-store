@@ -109,10 +109,10 @@
 <br>
 <br>
   <div class = "one" ><a href="addbook.php">ADD BOOK</a></div>
-  <div class = "one" ><a href="book1.php">BOOK REQUEST</a></div>
+  <div class = "one" ><a href="book1.php">VIEW BOOK</a></div>
   <div class = "one" ><a href="#">BADGE REQUEST</a></div>
   <div class = "one" ><a href="#">DELETE BOOK</a></div>
-  <div class = "one" ><a href="#">HELP</a></div>
+  <div class = "one" ><a href="">HELP</a></div>
 </div>
 
 <div id="main">
