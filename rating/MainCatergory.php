@@ -1,4 +1,3 @@
-
 <?php
   include "connection.php";
   include "topnav.php";
@@ -17,9 +16,8 @@
 /* Create two equal columns that floats next to each other */
 .column {
   float: left;
-  width: 50%;
-  height: 100%;
-  padding: 150px;
+  width: 60%;
+  padding: 50px;
 }
 
 /* Clear floats after the columns */
@@ -133,8 +131,8 @@ q {font-style: italic; color: #fff}
 </head>
 <body>
 
-<h2 style = "margin-left: 270px; color:#5d2a5b"> We lose ourselves in books, we find ourselves there too...</h2>
-<p style = "margin-left: 490px; color:#b54a68"><i>Books let you travel without moving your feet</i></p>
+<h2 style = "margin-left: 20px; color:#5d2a5b"> We lose ourselves in books, we find ourselves there too...</h2>
+<p style = "margin-left: 130px; color:#b54a68"><i>Books let you travel without moving your feet</i></p>
 
 <!--  for slide show -->
 <div class="slideshow-container">
@@ -224,62 +222,60 @@ function showSlides(n) {
  <!--<div id="btnContainer">
  <button class="btn active" onclick="gridView()"><i class="fa fa-th-large"></i>  LIST</button>
 </div>  -->
-t
-
-          
+<br>
 <div class="row">
   <div class="column" style="background-color:#699e8b;">
-  <img src="images/life2.jpg" alt="" style=" margin-top:-130px; width:100px">
-    <h2 style= "margin-top:-29px;">Life Style</h2>
+  <img src="images/life2.jpg" alt="" style="width:100px">
+    <h2>Life Style</h2>
     <p><i>Lifestyle is a way of life established by a society, culture, group or individual. This includes patterns of behavior, interaction, consumption, work, activity and interests that describe how a person spends their time</i></p>
     <ul>
-    <a href = "lifes.php"> <li style= "font-size:18px; color:white;"> <img src="images/fasb.jpg" alt="" style="width:40px"> Fashion & Beauty  </li></a>
+    <a href = "lifes.php"> <li > <img src="images/fasb.jpg" alt="" style="width:40px"> Fashion & Beauty  </li></a>
     <br>
-     <a href = "home & garden.php"> <li style= "font-size:18px; color:white;">  <img src="images/hg2.jpg" alt="" style="width:30px">Home & Garden </li> </a>
+     <a href = "home & garden.php"> <li>  <img src="images/hg2.jpg" alt="" style="width:30px">Home & Garden </li> </a>
      <br>
-     <a href = "food & nut.php"> <li style= "font-size:18px; color:white;">  <img src="images/fn.jpg" alt="" style="width:40px"> Food & Nutrition  </li> </a>
+     <a href = "food & nut.php"> <li>  <img src="images/fn.jpg" alt="" style="width:40px"> Food & Nutrition  </li> </a>
      <br>
-     <a href = "envi.php"> <li style= "font-size:18px; color:white;">  <img src="images/en.jpg" alt="" style="width:40px">Environment  </li> </a>
+     <a href = "envi.php"> <li>  <img src="images/en.jpg" alt="" style="width:40px">Environment  </li> </a>
      <br>
-     <a href = "travel.php">  <li style= "font-size:18px; color:white;"> <img src="images/tr.jpg" alt="" style="width:40px">  Travel </li> </a>
+     <a href = "travel.php">  <li> <img src="images/tr.jpg" alt="" style="width:40px">  Travel </li> </a>
     </ul>
   </div>
 
   <div class="column" style="background-color:#f5e9af;">
-  <img src="images/cat/cy.jpg" alt="" style=" margin-top:-130px;width:100px">
-    <h2 style= "margin-top:-29px;">Children & Youth</h2>
+  <img src="images/cat/cy.jpg" alt="" style="width:100px">
+    <h2>Children & Youth</h2>
     <p><i> 'youth', as those persons between the ages of 15 and 24 years, without prejudice to other definitions by Member States.therefore, children are those persons under the age of 14</i></p>
     <ul>
-    <a href = "par.php"> <li style= "font-size:18px; color:white;"> <img src="images/cat/par.jpg" alt="" style="width:50px"> Parenting  </li></a>
+    <a href = "par.php"> <li > <img src="images/cat/par.jpg" alt="" style="width:50px"> Parenting  </li></a>
     <br>
   </div>
 </div>
 
 
-<div class="row" >
+<div class="row">
   <div class="column" style="background-color:#b35c5c;">
-  <img src="images/ac.jpg" alt="" style=" margin-top:-130px; width:100px;">
-    <h2 style= "margin-top:-29px;">Academic & Education</h2>
+  <img src="images/ac.jpg" alt="" style="width:100px">
+    <h2>Academic & Education</h2>
     <p><i>Academic" Education is generally defined as education which has learning as it's primary purpose.</i></p>
     <ul>
-    <a href = "history.php"> <li style= "font-size:18px; color:white;" > <img src="images/cat/his.jpg" alt="" style="width:40px"> History  </li></a>
+    <a href = "history.php"> <li > <img src="images/cat/his.jpg" alt="" style="width:40px"> History  </li></a>
     <br>
-     <a href = "econ.php"> <li style= "font-size:18px; color:white;">  <img src="images/cat/eco.jpg" alt="" style="width:40px"> Economic </li> </a>
+     <a href = "econ.php"> <li>  <img src="images/cat/eco.jpg" alt="" style="width:40px"> Economic </li> </a>
      <br>
-     <a href = "geography.php"> <li style= "font-size:18px; color:white;">  <img src="images/cat/geo.jpg" alt="" style="width:40px"> Geography </li> </a>
+     <a href = "geography.php"> <li>  <img src="images/cat/geo.jpg" alt="" style="width:40px"> Geography </li> </a>
      <br>
-     <a href = "psycology.php"> <li style= "font-size:18px; color:white;">  <img src="images/cat/psy.jpg" alt="" style="width:40px">Psychology </li> </a>
+     <a href = "psycology.php"> <li>  <img src="images/cat/psy.jpg" alt="" style="width:40px">Psychology </li> </a>
      <br>
-     <a href = "sociology.php">  <li style= "font-size:18px; color:white;"> <img src="images/cat/soc.jpg" alt="" style="width:40px"> Sociology</li> </a>
+     <a href = "sociology.php">  <li> <img src="images/cat/soc.jpg" alt="" style="width:40px"> Sociology</li> </a>
     </ul>
 </div>
 
   <div class="column" style="background-color:#6159b5;">
-  <img src="images/cat/bio.png" alt="" style="margin-top:-130px; width:100px">
-    <h2 style= "margin-top:-15px;">Biography</h2>
+  <img src="images/cat/bio.png" alt="" style="width:100px">
+    <h2 >Biography</h2>
     <p><i> A biography, or simply bio, is a detailed description of a person's life. It involves more than just the basic facts like education, work, relationships, and death; it portrays a person's experience of these life events.</i></p>
      <ul>
-    <a href = "bio.php"> <li style= "font-size:18px; color:white;" > <img src="images/cat/b.jpg" alt="" style="width:40px"> Bio  </li></a>
+    <a href = "bio.php"> <li > <img src="images/cat/b.jpg" alt="" style="width:40px"> Bio  </li></a>
 </ul>
 </div>
 </div>
@@ -288,32 +284,32 @@ t
 
 <div class="row">
   <div class="column" style="background-color:#b5b059;">
-  <img src="images/cat/tec.jpg" alt="" style="margin-top:-130px; width:100px">
-    <h2 style= "margin-top:-29px;">Technology</h2>
+  <img src="images/cat/tec.jpg" alt="" style="width:100px">
+    <h2>Technology</h2>
     <p><i> Technology can be most broadly defined as the entities, both material and immaterial, created by the application of mental and physical effort in order to achieve some value. In this usage, technology refers to tools and machines that may be used to solve real-world problems. </i></p>
     <ul>
-    <a href = "soft.php"> <li style= "font-size:18px; color:white;" > <img src="images/cat/soft.jpg" alt="" style="width:40px"> Software </li></a>
+    <a href = "soft.php"> <li > <img src="images/cat/soft.jpg" alt="" style="width:40px"> Software </li></a>
     <br>
-     <a href = "hard.php"> <li style= "font-size:18px; color:white;">  <img src="images/cat/hard.jpg" alt="" style="width:40px"> Hardware</li> </a>
+     <a href = "hard.php"> <li>  <img src="images/cat/hard.jpg" alt="" style="width:40px"> Hardware</li> </a>
      <br>
-     <a href = "internet.php"> <li style= "font-size:18px; color:white;">  <img src="images/cat/int.jpg" alt="" style="width:40px"> Internet </li> </a>
+     <a href = "internet.php"> <li>  <img src="images/cat/int.jpg" alt="" style="width:40px"> Internet </li> </a>
      <br>
-     <a href = "web.php"> <li style= "font-size:18px; color:white;">  <img src="images/cat/web.jpg" alt="" style="width:40px">Web Design </li> </a>
+     <a href = "web.php"> <li>  <img src="images/cat/web.jpg" alt="" style="width:40px">Web Design </li> </a>
      <br>
-     <a href = "pro.php">  <li style= "font-size:18px; color:white;"> <img src="images/cat/pro.jpg" alt="" style="width:40px"> Programming</li> </a>
+     <a href = "pro.php">  <li> <img src="images/cat/pro.jpg" alt="" style="width:40px"> Programming</li> </a>
     </ul>
   </div>
 
   <div class="column" style="background-color:#6eb559;">
-  <img src="images/cat/per.jpg" alt="" style=" margin-top:-130px; width:100px">
-    <h2 style= "margin-top:-29px;">Personal growth</h2>
+  <img src="images/cat/per.jpg" alt="" style="width:100px">
+    <h2>Personal growth</h2>
     <p><i> Personal development is also known as self-development or personal growth. It involves the growth and enhancement of all aspects of the person, the feelings the person has about himself or herself, and their effectiveness in living</i></p>
     <ul>
-    <a href = "spiritual.php"> <li style= "font-size:18px; color:white;"> <img src="images/cat/sp.jpg" alt="" style="width:40px"> Spiritualty </li></a>
+    <a href = "spiritual.php"> <li > <img src="images/cat/sp.jpg" alt="" style="width:40px"> Spiritualty </li></a>
     <br>
-     <a href = "self-imp.php"> <li style= "font-size:18px; color:white;">  <img src="images/cat/si.jpg" alt="" style="width:40px"> Self-improvement</li> </a>
+     <a href = "self-imp.php"> <li>  <img src="images/cat/si.jpg" alt="" style="width:40px"> Self-improvement</li> </a>
      <br>
-     <a href = "relationship.php"> <li style= "font-size:18px; color:white;">  <img src="images/cat/rel.png" alt="" style="width:40px"> Relationships</li> </a>
+     <a href = "relationship.php"> <li>  <img src="images/cat/rel.png" alt="" style="width:40px"> Relationships</li> </a>
      <br>
 
 </div>
@@ -322,51 +318,51 @@ t
 
 <div class="row">
   <div class="column" style="background-color:#924944;">
-  <img src="images/cat/rel.png" alt="" style=" margin-top:-130px; width:100px">
-    <h2 style= "margin-top:-29px;">Religion</h2>
+  <img src="images/cat/rel.png" alt="" style="width:100px">
+    <h2>Religion</h2>
     <p><i> Religion is an organized collection of beliefs, cultural systems, and world views that relate humanity to an order of existence. Many religions have narratives, symbols, and sacred histories that are intended to explain the meaning of life and/or to explain the origin of life or the Universe.</i></p>
     <ul>
-    <a href = "religion.php"> <li style= "font-size:18px; color:white;"> <img src="images/cat/rel2.jpg" alt="" style="width:40px"> Religions  </li></a>
+    <a href = "religion.php"> <li > <img src="images/cat/rel2.jpg" alt="" style="width:40px"> Religions  </li></a>
 </ul>
 </div>
 
   <div class="column" style="background-color:#4a9644;">
-  <img src="images/cat/art.jpg" alt="" style="margin-top:-130px; width:100px">
-    <h2 style= "margin-top:-29px;">Art</h2>
+  <img src="images/cat/art.jpg" alt="" style="width:100px">
+    <h2>Art</h2>
     <p><i>Art is generally understood as any activity or product done by people with a communicative or aesthetic purpose—something that expresses an idea, an emotion or, more generally, a world view. It is a component of culture, reflecting economic and social substrates in its design</i></p>
     <ul>
-    <a href = "phptography.php"> <li style= "font-size:18px; color:white;" > <img src="images/cat/photo.jpg" alt="" style="width:40px"> Photography</li></a>
+    <a href = "phptography.php"> <li > <img src="images/cat/photo.jpg" alt="" style="width:40px"> Photography</li></a>
     <br>
-     <a href = "painting.php"> <li style= "font-size:18px; color:white;">  <img src="images/cat/paint.jpg" alt="" style="width:40px"> Painting & Drawing</li> </a>
+     <a href = "painting.php"> <li>  <img src="images/cat/paint.jpg" alt="" style="width:40px"> Painting & Drawing</li> </a>
      <br>
-     <a href = "music.php"> <li style= "font-size:18px; color:white;">  <img src="images/cat/music.jpg" alt="" style="width:40px"> Music</li> </a>
+     <a href = "music.php"> <li>  <img src="images/cat/music.jpg" alt="" style="width:40px"> Music</li> </a>
      <br>
-     <a href = "craft.php"> <li style= "font-size:18px; color:white;">  <img src="images/cat/craft.jpg" alt="" style="width:40px"> Craft & Hobbies </li> </a>
+     <a href = "craft.php"> <li>  <img src="images/cat/craft.jpg" alt="" style="width:40px"> Craft & Hobbies </li> </a>
 </div>
 </div>
 
 
 <div class="row">
   <div class="column" style="background-color:#446192;">
-  <img src="images/cat/health.png" alt="" style="margin-top:-130px; width:100px">
-    <h2 style= "margin-top:-29px;">Health & Fitness</h2>
+  <img src="images/cat/health.png" alt="" style="width:100px">
+    <h2>Health & Fitness</h2>
     <p><i> Regular exercise improves health and fitness. Health is defined as a state of complete mental, physical and social well-being; not merely the absence of illness or infirmity. Fitness is the ability to meet the demands of the environment.</i></p>
     <ul>
-    <a href = "medical.php"> <li style= "font-size:18px; color:white;"> <img src="images/cat/med.jpg" alt="" style="width:40px"> Medical</li></a>
+    <a href = "medical.php"> <li > <img src="images/cat/med.jpg" alt="" style="width:40px"> Medical</li></a>
     <br>
-     <a href = "diet.php"> <li style= "font-size:18px; color:white;">  <img src="images/cat/fit.jpg" alt="" style="width:40px"> Fitness & Diet</li> </a>
+     <a href = "diet.php"> <li>  <img src="images/cat/fit.jpg" alt="" style="width:40px"> Fitness & Diet</li> </a>
      <br>
-     <a href = "food.php"> <li style= "font-size:18px; color:white;">  <img src="images/cat/food.jpg" alt="" style="width:40px">Food & Nutrition</li> </a>
+     <a href = "food.php"> <li>  <img src="images/cat/food.jpg" alt="" style="width:40px">Food & Nutrition</li> </a>
      <br>
 
 </div>
 
   <div class="column" style="background-color:#2f8a8e;">
-  <img src="images/cat/env.jpg" alt="" style=" margin-top:-130px; width:100px">
-    <h2 style= "margin-top:-29px;">Environment</h2>
+  <img src="images/cat/env.jpg" alt="" style="width:100px">
+    <h2>Environment</h2>
     <p><i> The physical environment is where individuals live, learn, work, and play. People interact with their physical environment through the air they breathe, water they drink, houses they live in, and the transportation they access to travel to work and school</i></p>
     <ul>
-    <a href = "environment.php"> <li style= "font-size:18px; color:white;"> <img src="images/cat/en.jpeg" alt="" style="width:40px"> Envi  </li></a>
+    <a href = "environment.php"> <li > <img src="images/cat/en.jpeg" alt="" style="width:40px"> Envi  </li></a>
 </ul>
 </div>
 </div>
@@ -374,30 +370,30 @@ t
 
 <div class="row">
   <div class="column" style="background-color:#da68c7;">
-  <img src="images/cat/pl.jpg" alt="" style=" margin-top:-135px; width:100px">
-    <h2 style= "margin-top:-29px;" >Politics & Law</h2>
+  <img src="images/cat/pl.jpg" alt="" style="width:100px">
+    <h2>Politics & Law</h2>
     <p><i>Politics is the way that people living in groups make decisions.In everyday life, the term "politics" refers to the way that countries are governed, and to the ways that governments make rules and laws</i></p>
     <ul>
-    <a href = "pol.php"> <li  style= "font-size:18px; color:white;"> <img src="images/cat/pol.png" alt="" style="width:30px"> Politics </li></a>
+    <a href = "pol.php"> <li > <img src="images/cat/pol.png" alt="" style="width:30px"> Politics </li></a>
     <br>
-     <a href = "law.php"> <li style= "font-size:18px; color:white;">  <img src="images/cat/law.jpg" alt="" style="width:30px">Law</li> </a>
+     <a href = "law.php"> <li>  <img src="images/cat/law.jpg" alt="" style="width:30px">Law</li> </a>
      <br>
   </div>
 
   <div class="column" style="background-color:#d4bf9b;">
-  <img src="images/cat/lit.jpg" alt="" style=" margin-top:-135px; width:100px;">
-    <h2 style= "margin-top:-18px;">Fiction & Literature</h2>
+  <img src="images/cat/lit.jpg" alt="" style="width:100px">
+    <h2>Fiction & Literature</h2>
     <p><i>This particular branch of literature consists of stories, novels, and dramas based on made-up and fabricated stories and characters. Fiction contains certain symbolic and thematic features known as “literary merits.” In other words, fiction narrates a story, which aims at something bigger than merely a story. </i></p>
     <ul>
-    <a href = "classic lit.php"> <li style= "font-size:18px; color:white;"> <img src="images/cat/clas.jpg" alt="" style="width:40px">Classic Literature</li></a>
+    <a href = "classic lit.php"> <li > <img src="images/cat/clas.jpg" alt="" style="width:40px">Classic Literature</li></a>
     <br>
-     <a href = "science fiction.php"> <li style= "font-size:18px; color:white;">  <img src="images/cat/hor.jpg" alt="" style="width:40px"> Science & Fiction</li> </a>
+     <a href = "science fiction.php"> <li>  <img src="images/cat/hor.jpg" alt="" style="width:40px"> Science & Fiction</li> </a>
      <br>
-     <a href = "crime.php"> <li style= "font-size:18px; color:white;">  <img src="images/cat/drama.jpg" alt="" style="width:40px">Mystery & Crime</li> </a>
+     <a href = "crime.php"> <li>  <img src="images/cat/drama.jpg" alt="" style="width:40px">Mystery & Crime</li> </a>
      <br>
-     <a href = "poet.php"> <li style= "font-size:18px; color:white;">  <img src="images/cat/poet.jpg" alt="" style="width:40px">Poetry</li> </a>
+     <a href = "poet.php"> <li>  <img src="images/cat/poet.jpg" alt="" style="width:40px">Poetry</li> </a>
      <br>
-     <a href = "romance.php"> <li style= "font-size:18px; color:white;">  <img src="images/cat/romance.jpg" alt="" style="width:40px">Romance</li> </a>
+     <a href = "romance.php"> <li>  <img src="images/cat/romance.jpg" alt="" style="width:40px">Romance</li> </a>
      <br>
 </div>
 </div>
