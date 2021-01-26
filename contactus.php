@@ -36,31 +36,56 @@ if ($is_insert == TRUE) {
             background-image: url("images/bookicon01.jpg");
          }
          .wrapper
-    	{
+    	{   
+            display:none;
     		padding: 10px;
     		margin: -1px auto;
     		width:900px;
-    		height: 500px;
+    		height: 700px;
     		background-color: black;
     		opacity: .8;
     		color: white;
     	}
         .form-control
     	{
-            margin-left: 350px;
+            display:none;
+            margin-top: 70px;
+            margin-left: 300px;
     		height: 70px;
     		width: 30%;
     	}
-        
+        @media only screen and (min-width:280px){
+            .wrapper
+    	{  
+            display:block;
+    		padding: 10px;
+    		margin: -1px auto;
+    		width:900px;
+    		height: 700px;
+    		background-color: black;
+    		opacity: .8;
+    		color: white;
+        }
+        .form-control
+    	{
+            display:block;
+            margin-top: 70px;
+            margin-left: 300px;
+    		height: 70px;
+    		width: 30%;
+    	}
+
+    }
     	
     </style>
     <body>
         <div class= "wrapper">
     <form method = "post" action= "">
-        <input class = "form-control" type="text"  name="name"  placeholder="Name"> <br> <br>
-        <input class = "form-control" type="email"  name="email"  placeholder="E-mail"> <br> <br>
-         <textarea class = "form-control" name="msg" placeholder="Type your request"></textarea> <br> <br>
-          <input style= "margin-left:350px" class="btn btn-default" type="submit" value= "submit request">
+        <h2 style = "font-size: 30px; color:blue; margin-left:240px;"> Let us know about your issues....</h2>
+        <input class = "form-control" type="text"  name="name"  placeholder="Name"> <br> 
+        <input class = "form-control" type="email"  name="email"  placeholder="E-mail"> <br> 
+         <textarea class = "form-control" name="msg" placeholder="Type your request"></textarea> <br> <br><br>
+          <input style= "margin-left:370px" class="btn btn-default" type="submit" value= "submit request">
     </form>
     </div>
     </body>

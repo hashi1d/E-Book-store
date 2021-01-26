@@ -22,6 +22,110 @@
 }
 
 .sidenav {
+  display:none;
+	margin-top: 148px;  /*to see the top nav well without covering  */
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  display:none;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  display:none;
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  display:none;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+	
+.one:hover{
+   display:none;
+    color:white;
+    width:300px;
+    height:50px;
+    background-color: #044a44;
+
+}
+
+ .b{
+     display:none;
+     width : 300px;
+     margin : 0px auto;  /*  to get to form into middle possition */
+     color :  black;
+ }
+   .form-control
+   {
+     display:none;
+     background-color: black;
+     color : white;
+   }
+
+
+
+   @media screen and (min-width: 280px){
+    .srch{
+      display:block;
+		padding-left: 1200px;
+		color: red;
+
+  } 
+  
+  .one:hover{
+    display:block;
+    color:white;
+	width:300px;
+	height:50px;
+	background-color: #044a44;
+
+}
+ .b{
+  display:block;
+     width : 300px;
+     margin : 0px auto;  /*  to get to form into middle possition */
+     color :  black;
+ }
+   .form-control
+   {
+    display:block;
+     background-color: black;
+     color : white;
+   }
+
+   
+.sidenav {
+  display:block;
 	margin-top: 148px;  /*to see the top nav well without covering  */
   height: 100%;
   width: 0;
@@ -45,10 +149,12 @@
 }
 
 .sidenav a:hover {
+  display:block;
   color: #f1f1f1;
 }
 
 .sidenav .closebtn {
+  display:block;
   position: absolute;
   top: 0;
   right: 25px;
@@ -56,32 +162,8 @@
   margin-left: 50px;
 }
 
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-	
-.one:hover{
-    color:white;
-	width:300px;
-	height:50px;
-	background-color: #044a44;
 
-}
- .b{
-     width : 300px;
-     margin : 0px auto;  /*  to get to form into middle possition */
-     color :  black;
- }
-   .form-control
-   {
-     background-color: black;
-     color : white;
    }
 	</style>
 	
