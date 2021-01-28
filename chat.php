@@ -4,22 +4,21 @@
 
 ?>
 
-<!DOCTYPE html>
 <html>
 <head>
 <title> chat</title>
 </head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">  -->
+<!--<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">      crz navbar already added-->  
 <style type="text/css">
 
 body{
-    background-image:url("images/");
-
+    background-image:url("images/chat.jpg");
+    background-repeat : no-repeat;
      }
 .wrapper{
-
+                           /*this is box */
     padding: 10px;
     margin: -1px auto;   /* automatically resize the position */
     width:500px;
@@ -36,7 +35,7 @@ width :  77%;
 
 }
 
-.chat{
+.msg{
     height:450px;
     overflow-y: scroll;
 }
@@ -45,7 +44,7 @@ width :  77%;
   background-color:#02c5b6;
 
 }
-.chat-user{
+.chat{
   display:flex;
   flex-flow: wrap;
 
@@ -62,29 +61,42 @@ width :  77%;
     color: white;
 
 }
+
+.admin   .chatbox{
+
+height: 50px;
+width: 400px;
+padding: 13px 10px;
+background-color: yellow;
+border-radius : 10px;
+color: white;
+
+}
 </style>
 
 
-
-
 <body>
-<?php    //write this beggining because we need to consider  this first
+
+<?php                                           //write this beggining because we need to consider  this first
   if(isset($_POST['submit']))
   {
       mysqli_query ($db,"INSERT INTO library.chat VALUES ('','$_SESSION[login_user]','$_POST[Message]','No','student');");
      
+  
+  $res = mysqli_query($db, "SELECT * from chat where username= '$_SESSION[login_user]';");
   }
-  else{
+  else{                                    
 
-       $res = mysqli_query($db, "SELECT * from chat where username= '$_SESSION[login_user]'")
+       $res = mysqli_query($db, "SELECT * from chat where username= '$_SESSION[login_user]';");
   {
 
 ?>
 <div class = "wrapper">
 <div style = "height : 70px; width : 100%; background-color: #146a75; text-align:center; color:black;">
-<h3 style= "margin-top: 0px; padding-top:20px; margin-left: -20px;"> Admin </h3>
+<h3 style= "margin-top: 0px; padding-top:20px; margin-left: -20px;"> WELCOME </h3>
 </div>
-<div class = "chat">
+<div class = "msg">
+  <br>
 <br>
 <?php
 
@@ -92,24 +104,57 @@ while($row = mysqli_fetch_assoc($res))
 {
 
   if ($row['sender'] == 'student')
-}
+{
 ?>
-<!--student -->
-<div class = "chat-user">
+
+<!--this part is for student -->
+<br>
+<div class = "chat user">
 <div style = "float: left;  padding-top: 5px;">
-&nbsp
+&nbsp 
 <?php
-echo "<img class='img-circle profile-img' height=40 width=35 src='images/profileicon.png ".$_SESSION['pic']."'>";
-?> &nbsp
-</div>
+echo "<img class='img-circle profile-img' height=40 width=35 src='images/p.jpg ".$_SESSION['pic']."'>";
+?> 
+&nbsp
+</div>    
 <div class= "chatbox" style = "float: left; ">
-<p > Hi! </p>
+<!--<p > Hi! </p>  -->
   <?php
-  echo "$row['message']";
+  echo $row['message'];  //cant use "" it's for string
   ?>
 
 </div>
 </div>
+<br>
+
+<?php
+}
+
+else{
+
+?>
+<!-- this is for admin -->
+<br>
+<div class = "chat admin">
+<div style = "float: left;  padding-top: 5px;">
+<img style = "height: 40px; width :40px; border-radious:50%;" src = "images/p.jpg">
+&nbsp
+</div>
+<div style= "float:left;" class= "chatbox">
+
+<?php
+
+echo $row['message']
+?>
+
+</div>
+
+</div>
+
+<?php
+}
+  }
+?>
 </div>
 <div style ="height: 100px; padding-top:10px;">
 <form action = " " method = "post">
@@ -119,15 +164,5 @@ echo "<img class='img-circle profile-img' height=40 width=35 src='images/profile
 </form>
 </div>
 </div>
-<?php
-  if(isset($_POST['submit']))
-  {
-      mysqli_query ($db,"INSERT INTO library.chat VALUES ('','$_SESSION[login_user]','$_POST[Message]','No','student');");
-     
-  }
-
-?>
-
-
 </body>
 </html>

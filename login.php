@@ -1,7 +1,7 @@
 <?php
-
-include "connection.php";
 include "topnav.php";
+include "connection.php";
+
  //session_start();
 
 ?>
@@ -16,29 +16,78 @@ include "topnav.php";
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<style type="text/css">
+
+	body{
+		background-image: url("images/lo1.jpg");
+	}
      
 	 .wrapper   /*box */
 			   {
+				   display:none;
 				   padding: 10px;
 				   margin: -1px auto;   /* automatically resize the position */
-				   width:900px;
-				   height: 950px;
+				   width:800px;
+				   height: 630px;
 				   background-color: black;
-				   opacity: .8;
+				   opacity: .7;
 				   color: white;
+				  
+		
 			   } 
 			   .form-control     /* form styling */
-			   {
+			   {   
+				   display:none;
 				   height: 50px;
 				   width: 40%;
+				   margin-left: 250px;
 				   
 			   }
+			
 			   .scroll
 			   {
+				   display:none;
 				   width: 100%;
 				   height: 300px;
 				   overflow: auto;
 			   }
+			   @media only screen and (min-width:280px){
+				.wrapper   /*box */
+			   {
+				   display:block;
+				   padding: 10px;
+				   margin: -1px auto;   /* automatically resize the position */
+				   width:800px;
+				   height: 630px;
+				   background-color: black;
+				   opacity: .7;
+				   color: white;
+				  
+		
+			   } 
+			   .form-control     /* form styling */
+			   {
+					display:block;
+				   height: 50px;
+				   width: 40%;
+				   margin-left: 250px;
+				   
+			   }
+			
+			   .scroll
+			   {
+				  display:block;
+				   width: 100%;
+				   height: 300px;
+				   overflow: auto;
+			   }
+
+
+			   }
+
+
+
+
+
    </style>
 </head>
 
@@ -54,37 +103,33 @@ include "topnav.php";
         
 	
 <div class="box1">
-<h1 style="text-align: center; font-size: 35px; font-family: lucida console;">
+<h1 style="text-align: center; font-size: 35px;  color: red;font-family: lucida console; margin-left:-10px; ">
 E-BOOK STORE
 </h1>
 <br>
-<h1 style="text-align: center; font-size: 25px;">Sign In </h1>
+<h1 style="text-align: center; font-size: 25px; margin-left:-20px;">Sign In </h1>
 <br>
 <form name="login" action="" method="post">
 	<div class="login">
 	
 	<br>
-		<br>
-   
 	
 	<input class = "form-control" type="text" name="username" placeholder="username" required = "">
 	<br><br>
 	<input class = "form-control" type="password" name="password" placeholder="password" required = "">
 	<br><br>
 	<br><br>
-	<input  class="btn btn-default" type="submit" name = "submit" value="Login" href = "index.php">
+	<input  class="btn btn-default" style= "margin-left: 250px;" type="submit" name = "submit" value="Login" href = "index.php">
 </form>
 <p style="color: white; padding-left: 15px;">
 <br>
 <br>
 <br>
 <br>
-<a style="color: white;" href="updates.php"> Forgot password?</a>
-<br> <br> <br>
+<a style="color: white; margin-left:230px;" href="updates.php"> Forgot password?</a>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
 
-
-
-New to E-Book Store? <a style="color: white;" href="register.php"> Sign Up</a>
+New to E-Book Store? &nbsp <a style="color: white;" href="register.php"> Sign Up</a>
 </p>
 
 
@@ -98,7 +143,7 @@ New to E-Book Store? <a style="color: white;" href="register.php"> Sign Up</a>
 
 if(isset($_POST['submit']))  // if the button pressed
 {
-$count == 0;
+$count = 0;
 $res = mysqli_query($db,"SELECT * FROM `reg` WHERE username ='$_POST[username]' &&  password= '$_POST[password]' ; ");
 $_row = mysqli_fetch_assoc($res);
 $count = mysqli_num_rows($res);

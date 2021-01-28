@@ -24,6 +24,7 @@
               }
               .wrapper   /*box */
               {
+                display: none;
                   padding: 10px;
                   margin: -1px auto;   /* automatically resize the position */
                   width:900px;
@@ -34,17 +35,77 @@
               } 
               .form-control     /* form styling */
               {
+                display: none;
                   height: 50px;
                   width: 40%;
                   
               }
               .scroll
               {
+                display: none;
                   width: 100%;
                   height: 300px;
                   overflow: auto;
               }
       
+              @media only screen and (min-width:280px){
+                .wrapper   /*box */
+              {
+                  display: block;
+                  padding: 10px;
+                  margin: -1px auto;   /* automatically resize the position */
+                  width:900px;
+                  height: 550px;
+                  background-color: black;
+                  opacity: .8;
+                  color: white;
+              } 
+              .form-control     /* form styling */
+              {
+                display: block;
+                  height: 50px;
+                  width: 40%;
+                  
+              }
+              .scroll
+              {
+                display: block;
+                  width: 100%;
+                  height: 300px;
+                  overflow: auto;
+              }
+
+              }
+              
+              @media only screen and (min-height:auto){
+                .wrapper   /*box */
+              {
+                  display: block;
+                  padding: 10px;
+                  margin: -1px auto;   /* automatically resize the position */
+                  width:900px;
+                  height: 550px;
+                  background-color: black;
+                  opacity: .8;
+                  color: white;
+              } 
+              .form-control     /* form styling */
+              {
+                display: block;
+                  height: 50px;
+                  width: 40%;
+                  
+              }
+              .scroll
+              {
+                  display: block;
+                  width: 100%;
+                  height: 300px;
+                  overflow: auto;
+              }
+
+              }
+
           </style>
 
         </head>
@@ -52,12 +113,12 @@
                              <!-- creating box -->
             <div class="wrapper">
                     
-                <h1 style = "text-align:center ;">Critisisum Zone</h1>
+                <h1 style = "text-align:center ;">Idea Zone</h1>
                 <h2 style = "text-align:center;"> Publish your openions about books</h2>
                 <br>
                 <br>
             
-                <p style ="font-color:red;"> Providing critisisums for a book that you read is very interesting habit. These ideas are based on how reader feel about the book.and how those characters in the book move with the real lives. 
+                <p style ="font-color:red;"> Providing ideas for a book that you read is very interesting habit. These ideas are based on how reader feel about the book.and how those characters in the book move with the real lives. 
                     <br> You all are welcome to share your hidden deep ideas about these books that you read..This will be a good platform to share your thoughts and feeling about books....
                 </p>
                 
@@ -71,7 +132,7 @@
         
         <input class="form-control" type="text" name="Status" placeholder="Status:"><br>  -->
         
-        <input class="form-control" type="text" name="comment" placeholder="Share your thougts aboyt lit:"><br>
+        <input class="form-control" type="text" name="comment" placeholder="Share your thougts aboyt literature:"><br>
 
 		<input class="btn btn-default" type="submit" name="submit" value="publish" style="width: 100px; height: 35px;">	
     

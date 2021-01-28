@@ -18,27 +18,64 @@ include "connection.php";
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
     <style type="text/css">
      
+     body{
+        background-image: url("images/login.jpg");
+     }
     .wrapper   /*box */
               {
+                display:none;
                   padding: 10px;
                   margin: -1px auto;   /* automatically resize the position */
-                  width:900px;
-                  height: 950px;
+                  width:800px;
+                  height: 820px;
                   background-color: black;
                   opacity: .8;
                   color: white;
+                  
               } 
               .form-control     /* form styling */
               {
+                display:none;
                   height: 50px;
                   width: 40%;
-                  
+                 margin-left:240px; 
               }
               .scroll
               {
+                display:none;
                   width: 100%;
                   height: 300px;
                   overflow: auto;
+              }
+
+              @media only screen and (min-width:280px){
+             
+                .wrapper   /*box */
+              {
+                display:block;
+                  padding: 10px;
+                  margin: -1px auto;   /* automatically resize the position */
+                  width:800px;
+                  height: 820px;
+                  background-color: black;
+                  opacity: .8;
+                  color: white;
+                  
+              } 
+              .form-control     /* form styling */
+              {
+                display:block;
+                  height: 50px;
+                  width: 40%;
+                 margin-left:240px; 
+              }
+              .scroll
+              {
+                display:block;
+                  width: 100%;
+                  height: 300px;
+                  overflow: auto;
+              }
               }
   </style>
 </head>
@@ -75,8 +112,7 @@ include "connection.php";
                     <br>
                 
                     <br>
-                    <br>
-                    <br>
+                    
 
     <form name="login" action="" method="post">
         
@@ -94,7 +130,7 @@ include "connection.php";
         <br><br>
         <input class = "form-control"  type="text" name="contact" placeholder="contact" required = "">
         <br><br>
-        <input  class="btn btn-default" type="submit" name = "submit" value="Sign up">
+        <input  class="btn btn-default" style = "margin-left:357px; " type="submit" name = "submit" value="Sign up">
     </form>
     
 </div>

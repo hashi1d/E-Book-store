@@ -8,6 +8,7 @@
 	<title>Edit profile</title>
 	<style type="text/css">
 	 body{
+
 		background-image: url("images/edit.jpg");
 		background-repeat: no-repeat;
 		
@@ -15,18 +16,68 @@
 	 }
 		.form-control
 		{
+			display:none;
 			width:250px;
 			height: 38px;
 		}
 		.form1
 		{
+			display:none;
 			margin:0 540px;
         
 		}
 		label
 		{
+			display:none;
 			color: black;
 		}
+
+
+		@media only screen and (min-width:280px){
+			
+		.form-control
+		{
+			display:block;
+			width:250px;
+			height: 38px;
+		}
+		.form1
+		{
+			display:block;
+			margin:0 540px;
+        
+		}
+		label
+		{
+			display:block;
+			color: black;
+		}
+
+
+		}
+		
+		@media only screen and (min-height:540px){
+			
+		.form-control
+		{
+			display:block;
+			width:250px;
+			height: 38px;
+		}
+		.form1
+		{
+			display:block;
+			margin:0 540px;
+        
+		}
+		label
+		{
+			display:block;
+			color: black;
+		}
+
+
+		}	
 
 	</style>
 </head>

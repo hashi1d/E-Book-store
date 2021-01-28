@@ -9,6 +9,7 @@
  	<title>Profile</title>
 	 <style type="text/css">
 	 body{
+		display: none;
 		background-image: url("images/pp.jpg");
 		background-repeat: no-repeat;
 		
@@ -16,10 +17,50 @@
 	 }
  		.wrapper
  		{
+			display: none;
  			width: 300px;
  			margin: 0 auto;
 			 color: black;
-			
+
+		 }
+			 @media only screen and (min-width:280px){
+
+
+				body{
+				display:block;
+				background-image: url("images/pp.jpg");
+				background-repeat: no-repeat;	
+	     }
+ 			     .wrapper{
+				display:block;
+ 				 width: 300px;
+ 				 margin: 0 auto;
+				 color: black;
+
+
+		 }
+
+			 }	
+			 @media only screen and (min-height:640px){
+
+
+				body{
+				display:block;
+				background-image: url("images/pp.jpg");
+				background-repeat: no-repeat;	
+				}
+				.wrapper{
+				display:block;
+				width: 300px;
+				margin: 0 auto;
+				color: black;
+
+
+				}
+
+}	
+
+
  	</style>
  </head>
  <body >

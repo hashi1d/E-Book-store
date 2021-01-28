@@ -1,6 +1,5 @@
 
 <?php
-
 session_start();
 ?>
 
@@ -13,6 +12,8 @@ session_start();
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+     <meta name="HandheldFriendly" content="true">
 	<link rel = "stylesheet" href="https://www.w3schools.com/lib/w3.css"/>
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -20,12 +21,17 @@ session_start();
 </head>
 <style>
 
+
 .flip-box {
   background-color: transparent;
   width: 300px;
   height: 200px;
   border: 1px solid #f1f1f1;
   perspective: 1000px;
+  margin-top: -420px;
+  margin-right: 120px;
+  float: right;
+  
 }
 
 .flip-box-inner {
@@ -117,7 +123,7 @@ session_start();
 		</header>
 		<section style="background-color:#040404;" >
 			<div class="sec_img">
-			<div class="w3-content w3-section"  style= "  width: 100%; height: 700px;">
+			<div class="w3-content w3-section"  style= "  width: 70%; height: 500px; padding: 30px;">
                 <img class = "mySlides w3-animate-fading" src="images/f.jpg" style="width: 60%;">
                 <img class="mySlides w3-animate-left" src="images/5.jpg" style="width: 60%;">
                 <img class="mySlides w3-animate-left" src="images/3.jpg" style="width: 60%;">
@@ -159,29 +165,27 @@ session_start();
           
 
 	</div>
-
-	<div class = "next" style= "float:right;  margin-top: -450px;">
-					<h2 style = "color:white; float: right;  margin-top: -500px; margin-right:220px;"> Top most audio</h2>
-				
+	
+	
   <div class="flip-box">
   <div class="flip-box-inner">
     <div class="flip-box-front">
-	  <h2 style= "font-size:20px;">WELCOME TO E-BOOK STORE</h2>
+	  <h2 style= "font-size:20px; margin-top: 30px;">WELCOME TO E-BOOK STORE</h2>
 	  <br>
 	  <br>
-	  <p style = "color: red;"> <i>What should you read next?? </i></p>
+	  <p style = "color: red; font-size:20px; margin-top: 20px;"> <i>What should you read next?? </i></p>
     </div>
     <div class="flip-box-back">
 	  <h2></h2>
-	  <p>The more that you read, the more things you will know. The more you learn, the more places you’ll go. 
+	  <p style = "margin-top: 30px;">The more that you read, the more things you will know. The more you learn, the more places you’ll go. 
 		  <br> 
-		  <br> <h4 style = "color: red;"> Join &  keep reading with E-BOOK Store </h4>
+		  <br> <h4 style = "font-size:15px; color: blue; margin-top: 37px;"> Join &  keep reading with E-BOOK Store </h4>
 	  </p>
     </div>
   </div>
 </div>
 
-			</div>
+			
 
 
 	<?php

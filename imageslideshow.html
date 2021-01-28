@@ -1,0 +1,44 @@
+
+
+
+
+<html>
+    <head>
+        <title>
+            slide show
+        </title>
+        <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+    <body style="background-color:black;">
+               <div class="w3-content w3-section"  style="width: 900px;">
+                <img class = "mySlides w3-animate-fading" src="images/f.jpg" style="width: 100%;">
+                <img class="mySlides w3-animate-left" src="images/2.jpg" style="width: 100%;">
+                <img class="mySlides w3-animate-left" src="images/3.jpg" style="width: 100%;">
+                <img class="mySlides w3-animate-left" src="images/4.jpg" style="width: 100%;">
+                <img class="mySlides  w3-animate-fading" src="images/5.jpg" style="width: 100%;">
+               
+                <img class="mySlides" src="images/7.jpg" style="width: 100%;">
+                <img class="mySlides" src="images/8.jpg" style="width: 100%;">
+               </div>
+               <script type="text/javascript">
+                var a=0;
+                carousel();// dispay one by one pictures
+                function carousel(){
+                    var i;
+                    var j = document.getElementsByClassName("mySlides");
+                    //document.write(j.length);
+                    for(i=0; i<j.length; i++)
+                    {
+                        j[i].style.display= "none";
+                    }
+                    a++; 
+                    if(a>j.length)
+                    {a=1}
+                    j[a-1].style.display = "block";
+                    setTimeout(carousel,3000);
+                }
+            </script>
+    </body>
+</html>

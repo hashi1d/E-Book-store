@@ -1,8 +1,9 @@
 
 
+
 <?php
   include "connection.php";
-  include "topnav.php";
+  include "top.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -47,9 +48,31 @@
             </div>
 </div>
 
-               
+          
+<div class = "rate" style ="margin-top: -356px;">
+  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp
+  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp
+  <img src = "images/rate.jpg"  alt= ""  /> 
+  <br>
+  <br>
+            <p style= "color: #fff;"> Your Preferance is a good addition to keep smashing books in our store. <br> Click here &  exchange your experience about the books with others.. <br>
+        THANK YOU & KEEP READING......</p>
+            <a href = "rating/ratingenvi.php">
+            <br>
+            <br>
+                <button style = "color: yellow;"> Rate here</button>
+                </a>
+                &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp
+                &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp
+                &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp
+                <a href = "MainCatergory.php">
+                <button style = "color: yellow;"> GO BACK</button>
+                </a>
+</div>     
                
 </div>
 </div>
  </body>
-</html>
+
+
+

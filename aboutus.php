@@ -17,11 +17,10 @@ include "connection.php";
                   background-image: url("images/about.jpg");
                   
               }
-          
-
-             
+           
               .aboutsec
               {
+                  display: none;
                   padding: 30px;
                   margin: -1px auto;   /* automatically resize the position */
                   width:900px;
@@ -78,8 +77,24 @@ include "connection.php";
     background:#3B5998;
     color: #fff;
 }
+
+@media only screen and (min-width:280px){
+    .aboutsec
+              {
+                  display:block;
+                  padding: 30px;
+                  margin: -1px auto;   /* automatically resize the position */
+                  width:900px;
+                  height: 1100px;
+                  background-color: black;
+                  opacity: .8;
+                  color: white;
+              }
+
+
+}
         
-              </style>
+ </style>
 </head>
 
 <body>
