@@ -15,7 +15,8 @@
 
 /* Create two equal columns that floats next to each other */
 .column {
-  float: left;
+  
+ float:right;
   width: 60%;
   padding: 50px;
 }
