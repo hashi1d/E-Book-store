@@ -67,20 +67,141 @@ button{
 
 }
 
+
        </style>  -->
+
+       <style>
+  body{
+   background:#585555;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   width: 100%;
+   height: 100%;
+}
+.container{
+    width: 96%;
+    margin: 80px auto;
+    background-color: rgb(84, 84, 175);
+    
+}
+.book{
+
+width: 50%;
+float : left;
+background: grey;
+margin:  5px;
+padding: 10px;
+
+}
+
+
+  @media only screen and (max-width: 1100px) {
+    body {
+      background-color: #585555;;
+    }
+    .container{
+    width: 96%;
+    margin: 80px auto;
+    background-color: rgb(84, 84, 175);
+    
+    }
+    .h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    border-left: 2px solid #585555;
+    color: #fff;
+}
+
+
+
+
+.container .h2{
+
+    text-align: center;
+    color:red;
+
+    }
+.book{
+
+width: 100%;
+float : left;
+background:black;
+margin:  5px;
+padding: 10px;
+margin-top: 20px;
+
+}
+.p{
+  text-align:center;
+  font-size:17px;
+  color:#fff;
+}
+.p1{
+  font-size:17px;
+}
+.span{
+  font-size:17px;
+
+}
+.icon{
+  width:95%;
+  object-position: center;
+  text-align:center;
+  margin-top: 5px;     
+           
+  
+}
+.container2{
+    width: 96%;
+    margin: 400px auto;
+    text-align: center;
+    background-color: rgb(84, 84, 175);
+    
+}
+
+.book2{
+  display:none;
+  width: 100%;
+  float : left;
+  background:  #585555;
+  margin:  5px;
+  padding: 10px;
+  
+  }
+
+.img1{
+  display:block;
+  margin: auto
+}
+ 
+.b1{
+  float:left;
+  
+}
+.content2 .prate{
+  text-align:center;
+  font-size: 15px;
+  margin-top: 95%;
+  color: #fff;
+  
+}
+
+
+  }
+  
+  </style>   
  <body>
             <div class= "container">
-                <h1>LAW</h1>
+                <h1 class = "h1">LAW</h1>
                  <div class = "book">
                     <div class = "icon">
                         <img src = "images/cat/laww.jpg"  alt= ""  />
                 </div>
                 <div class = "content">
-                <h2> International Law and International Relations</h2>
-                <p> <I> International Law (IL) is the set of rules generally regarded and accepted as binding in relations between states and between nations. It serves as a framework for the practice of stable and organized international relations (IR)
+                <h2 class = "h2"> International Law and International Relations</h2>
+                <p class = "p"> <I> International Law (IL) is the set of rules generally regarded and accepted as binding in relations between states and between nations. It serves as a framework for the practice of stable and organized international relations (IR)
 .</I> </p>
-                <p> Details about the book: <br>  Author: Beth A Simons</p>
-                <span> More text about the book: </span>
+                <p class = "p1"> Details about the book: <br>  Author: Beth A Simons</p>
+                <span class = "span"> More text about the book: </span>
                 <a href = "books for the web/International Law and International Relations.pdf">
                 <button> Read it</button>
                 </a>
@@ -89,6 +210,11 @@ button{
 </div>
 </div>
 </div>
+
+
+<div class = "container2">
+<div class= "book2">
+
 <div class = "rate" style ="margin-top: -427px;">
   &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp
   &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp
@@ -109,7 +235,9 @@ button{
                 <button style = "color: yellow;"> GO BACK</button>
                 </a>
 </div>     
+</div>     
 
+</div>
 </div>
               
 </body>

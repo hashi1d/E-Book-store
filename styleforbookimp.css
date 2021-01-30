@@ -28,7 +28,7 @@ body{
 
     width: 50%;
     float : left;
-    background: black;
+    background:grey;
     margin:  5px;
     padding: 10px;
 
@@ -53,6 +53,10 @@ button{
 }
 
 .rate{
+    
     float: right;
     margin-right: 30px;
 }
+
+
+

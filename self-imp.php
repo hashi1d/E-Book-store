@@ -13,18 +13,137 @@
         <link rel="stylesheet" type="text/css" href="styleforbookimp.css">
     <meta charset="utf-8">
     </head>
+    <style>
+  body{
+   background:#585555;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   width: 100%;
+   height: 100%;
+}
+.container{
+    width: 96%;
+    margin: 80px auto;
+    background-color: rgb(84, 84, 175);
+    
+}
+.book{
+
+width: 50%;
+float : left;
+background: grey;
+margin:  5px;
+padding: 10px;
+
+}
+
+
+  @media only screen and (max-width: 1100px) {
+    body {
+      background-color: #585555;;
+    }
+    .container{
+    width: 96%;
+    margin: 80px auto;
+    background-color: rgb(84, 84, 175);
+    
+    }
+    .h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    border-left: 2px solid #585555;
+    color: #fff;
+}
+
+
+
+
+.container .h2{
+
+    text-align: center;
+    color:red;
+
+    }
+.book{
+
+width: 100%;
+float : left;
+background:black;
+margin:  5px;
+padding: 10px;
+margin-top: 20px;
+
+}
+.p{
+  text-align:center;
+  font-size:17px;
+  color:#fff;
+}
+.p1{
+  font-size:17px;
+}
+.span{
+  font-size:17px;
+
+}
+.icon{
+  width:95%;
+  object-position: center;
+  text-align:center;
+  margin-top: 5px;     
+           
+  
+}
+.container2{
+    width: 96%;
+    margin: 400px auto;
+    text-align: center;
+    background-color: rgb(84, 84, 175);
+    
+}
+
+.book2{
+  display:none;
+  width: 100%;
+  float : left;
+  background:  #585555;
+  margin:  5px;
+  padding: 10px;
+  
+  }
+
+.img1{
+  display:block;
+  margin: auto
+}
+ 
+.b1{
+  float:left;
+  
+}
+.content2 .prate{
+  text-align:center;
+  font-size: 15px;
+  margin-top: 95%;
+  color: #fff;
+  
+}
+
+
+  }
+  
+  </style>   
  <body>
             <div class= "container">
-                <h1> SELF-IMPROVEMENT</h1>
+                <h1 class = "h1"> SELF-IMPROVEMENT</h1>
                  <div class = "book">
                     <div class = "icon">
                         <img src = "images/cat/self.jpg"  alt= ""  />
                 </div>
                 <div class = "content">
-                <h2> Living in the Light: A guide to personal transformation</h2>
-                <p> <I> Living In The Light is very powerful...it can transform your life." -- Dr. Wayne Dyer, author of The Sky Is The Limit. ... A clear and practical guide for developing your intuition, Living In The Light shows the way to greater aliveness and creativity and to a transformation of the world around you..</I> </p>
-                <p> Details about the book: <br>  Author: Wayne Dyer </p>
-                <span> More text about the book: </span>
+                <h2 class = "h2"> Living in the Light: A guide to personal transformation</h2>
+                <p class = "p"> <I> Living In The Light is very powerful...it can transform your life." -- Dr. Wayne Dyer, author of The Sky Is The Limit. ... A clear and practical guide for developing your intuition, Living In The Light shows the way to greater aliveness and creativity and to a transformation of the world around you..</I> </p>
+                <p class = "p1"> Details about the book: <br>  Author: Wayne Dyer </p>
+                <span class = "span" >More text about the book: </span>
                 <a href = "books for the web/Living in the Light_ A guide to personal transformation ( PDFDrive ).pdf">
                 <button> Read it</button>
                 </a>
@@ -37,6 +156,9 @@
                
 </div>
 
+
+<div class = "container2">
+<div class= "book2">
 <div class = "rate" style ="margin-top: -456px;">
   &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp
   &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp
@@ -57,7 +179,8 @@
                 <button style = "color: yellow;"> GO BACK</button>
                 </a>
 </div>     
-
+</div>
+</div>     
 </div>
  </body>
 </html>

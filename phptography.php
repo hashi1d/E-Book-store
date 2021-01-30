@@ -13,19 +13,138 @@
         <link rel="stylesheet" type="text/css" href="styleforbookimp.css">
     <meta charset="utf-8">
     </head>
+    <style>
+  body{
+   background:#585555;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   width: 100%;
+   height: 100%;
+}
+.container{
+    width: 96%;
+    margin: 80px auto;
+    background-color: rgb(84, 84, 175);
+    
+}
+.book{
+
+width: 50%;
+float : left;
+background: grey;
+margin:  5px;
+padding: 10px;
+
+}
+
+
+  @media only screen and (max-width: 1100px) {
+    body {
+      background-color: #585555;;
+    }
+    .container{
+    width: 96%;
+    margin: 80px auto;
+    background-color: rgb(84, 84, 175);
+    
+    }
+    .h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    border-left: 2px solid #585555;
+    color: #fff;
+}
+
+
+
+
+.container .h2{
+
+    text-align: center;
+    color:red;
+
+    }
+.book{
+
+width: 100%;
+float : left;
+background:black;
+margin:  5px;
+padding: 10px;
+margin-top: 20px;
+
+}
+.p{
+  text-align:center;
+  font-size:17px;
+  color:#fff;
+}
+.p1{
+  font-size:17px;
+}
+.span{
+  font-size:17px;
+
+}
+.icon{
+  width:95%;
+  object-position: center;
+  text-align:center;
+  margin-top: 5px;     
+           
+  
+}
+.container2{
+    width: 96%;
+    margin: 400px auto;
+    text-align: center;
+    background-color: rgb(84, 84, 175);
+    
+}
+
+.book2{
+  display:none;
+  width: 100%;
+  float : left;
+  background:  #585555;
+  margin:  5px;
+  padding: 10px;
+  
+  }
+
+.img1{
+  display:block;
+  margin: auto
+}
+ 
+.b1{
+  float:left;
+  
+}
+.content2 .prate{
+  text-align:center;
+  font-size: 15px;
+  margin-top: 95%;
+  color: #fff;
+  
+}
+
+
+  }
+  
+  </style>
  <body>
             <div class= "container">
-                <h1> PHOTOGRAPHY</h1>
+                <h1 class = "h1"> PHOTOGRAPHY</h1>
                  <div class = "book">
                     <div class = "icon">
                         <img src = "images/cat/photo1.jpg"  alt= ""  />
                 </div>
                 <div class = "content">
-                <h2> Absolute Beginner's Guide to Digital Photography</h2>
-                <p> <I> Product Description Teaches basic digital photography techniques, including exposure, focus, lighting, file formats, file storage, the equipment and materials available, and how to use Adobe Photoshop Elements iPhoto to edit images.
+                <h2 class = "h2"> Absolute Beginner's Guide to Digital Photography</h2>
+                <p class = "p"> <I> Product Description Teaches basic digital photography techniques, including exposure, focus, lighting, file formats, file storage, the equipment and materials available, and how to use Adobe Photoshop Elements iPhoto to edit images.
 </I> </p>
-                <p> Details about the book: <br>  Author: C. Joseph</p>
-                <span> More text about the book: </span>
+                <p class = "p1"> Details about the book: <br>  Author: C. Joseph</p>
+                <span class = "span"> More text about the book: </span>
                 <a href = "books for the web/Absolute Beginner's Guide to Digital Photography ( PDFDrive ).pdf">
                 <button> Read it</button>
                 </a>
@@ -37,6 +156,9 @@
                
                
 </div>
+
+<div class = "container2">
+<div class= "book2">
 <div class = "rate" style ="margin-top: -440px;">
   &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp
   &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp
@@ -57,7 +179,8 @@
                 <button style = "color: yellow;"> GO BACK</button>
                 </a>
 </div>     
-
+</div>
+</div>     
 </div>
  </body>
 </html>

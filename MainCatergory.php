@@ -1,13 +1,14 @@
 
 <?php
-  include "connection.php";
+  
   include "topnav.php";
+  include "connection.php";
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
 <style>
 * {
@@ -129,11 +130,13 @@ q {font-style: italic; color: #fff}
 .author {color: cornflowerblue;}
 
 
+
+
 </style>
 </head>
 <body>
 
-<h2 style = "margin-left: 270px; color:#5d2a5b"> We lose ourselves in books, we find ourselves there too...</h2>
+<h2 class = "h2" style = "margin-left: 270px; color:#5d2a5b"> We lose ourselves in books, we find ourselves there too...</h2>
 <p style = "margin-left: 490px; color:#b54a68"><i>Books let you travel without moving your feet</i></p>
 
 <!--  for slide show -->
@@ -224,14 +227,14 @@ function showSlides(n) {
  <!--<div id="btnContainer">
  <button class="btn active" onclick="gridView()"><i class="fa fa-th-large"></i>  LIST</button>
 </div>  -->
-t
+
 
           
 <div class="row">
   <div class="column" style="background-color:#699e8b;">
-  <img src="images/life2.jpg" alt="" style=" margin-top:-130px; width:100px">
-    <h2 style= "margin-top:-29px;">Life Style</h2>
-    <p><i>Lifestyle is a way of life established by a society, culture, group or individual. This includes patterns of behavior, interaction, consumption, work, activity and interests that describe how a person spends their time</i></p>
+  <img class = "life" src="images/life2.jpg" alt="" style=" margin-top:-130px; width:100px">
+    <h2 class = "lifeh" style= "margin-top:-29px;">Life Style</h2>
+    <p class = "lifep"><i>Lifestyle is a way of life established by a society, culture, group or individual. This includes patterns of behavior, interaction, consumption, work, activity and interests that describe how a person spends their time</i></p>
     <ul>
     <a href = "lifes.php"> <li style= "font-size:18px; color:white;"> <img src="images/fasb.jpg" alt="" style="width:40px"> Fashion & Beauty  </li></a>
     <br>

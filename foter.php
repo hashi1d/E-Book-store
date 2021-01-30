@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style type = "text/css">
 .fa{
+   
     margin: 0px 5px;
     padding:2px;  /* take text inside to the circle */
     font-size: 20px;
@@ -21,32 +22,81 @@
     opacity: .7;
 }
 .fa-facebook{
+   
     background:#3B5998;
     color: #fff;
 }
 .fa-twitter{
+    
     background:#55ACEE;
     color: #fff;
 }
 .fa-google{
+    
     background:#dd4b39;
     color: #fff;
 }
 .fa-instagram{
+    
     background:#125688;
     color: #fff;
 }
 .fa-yahoo{
+    
     background:#3B5998;
     color: #fff;
+}
+@media only screen (min-width:300px)
+{
+    
+    .fa{
+    display:block;    
+    margin: 0px 5px;
+    padding:2px;  /* take text inside to the circle */
+    font-size: 20px;
+    width: 20px;
+    height:20px;
+    text-align:center;
+    text-decoration:none;
+    border-radius: 50%;
+}
+.fa:hover
+{    display:block; 
+    opacity: .7;
+}
+.fa-facebook{
+    display:block; 
+    background:#3B5998;
+    color: #fff;
+}
+.fa-twitter{
+    display:block; 
+    background:#55ACEE;
+    color: #fff;
+}
+.fa-google{
+    display:block; 
+    background:#dd4b39;
+    color: #fff;
+}
+.fa-instagram{
+    display:block; 
+    background:#125688;
+    color: #fff;
+}
+.fa-yahoo{
+    display:block; 
+    background:#3B5998;
+    color: #fff;
+}
 }
 </style>
 
 </head>
 <body>
-    <footer  style= "background-color: black;">
+    <footer class= "fu"  style= "background-color: black;">
     <br>
-    <h3 style = "color: white; text-align: center;"> Contact us through social media</h3>
+    <h3 class="h3" style = "color: white; text-align: center;"> Contact us through social media</h3>
     <br>
     <div style = "margin:0px 570px;" >
     <a href ="" class = "fa fa-facebook"> </a>
