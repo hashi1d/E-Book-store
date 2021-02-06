@@ -20,7 +20,7 @@
   margin-right:auto;
   width: 60%;
   padding: 50px;
-  background-color:#b35c5c;
+  
 }
 
 /* Clear floats after the columns */
@@ -92,7 +92,7 @@ img {
 <p  class = "p" ><i>Books let you travel without moving your feet</i></p>
 
 <div class="row">
-  <div class="column" >
+  <div class="column" style="background-color:#b35c5c;">
   <img src="images/ac.jpg" alt="" style="width:100px">
     <h2 class = "h21">Academic & Education</h2>
     <p class = "p1"><i>Academic" Education is generally defined as education which has learning as it's primary purpose.</i></p>
