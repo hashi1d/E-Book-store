@@ -31,7 +31,7 @@
                 
             }
             .logo{
-                padding-left: 20px;
+                padding-left: 1px;
                 float: left;
                 padding-top: 5px;
                 
@@ -57,9 +57,7 @@
                     display: block;
                 }
                 .icon-drop {
-                    margin-top:500px;
-                    display: block;
-                    align-items: right ;
+                    
                 }
             }
             @media screen and (min-width: 768px) {
@@ -118,10 +116,11 @@
                 <div class="navbar-header">
                     <div class="logo">
                         <!--<h6 class="logo-header"  style="color: white; font-size: 16px; line-height: 21px; margin-top: 2px;  font-style: italic">Find the next book in your list</h6> -->
-                        <img class = "img" style = "margin-top: -34px; margin-left: -5px;"src="images/bklogo.jpg" >
+                        <img class = "img" style = "margin-top: -34px; margin-left: -5px;"src="images/bklo.jpg" >
                     </div>
-                   <!-- <a class="navbar-brand active" href="#" style= "color:blue; margin-left:125px; margin-top: 25px; font-size: 25px;">E-book Store</a> -->
+                   <!-- <a class="navbar-brand active" href="#" style= "color:blue; margin-left:125px; margin-top: -7px; font-size: 25px;">E-book Store</a>-->
                 </div>
+               <!-- <a class="navbar-brand active" href="#" style= "color:blue; margin-left:10px; margin-top:23px; font-size: 25px;">E-book Store</a> -->
                 <a href="javascript:void(0);" class="icon icon-drop" onclick="responsiveFunction()">
                     <i class="fa fa-bars"></i>
                 </a>
@@ -153,7 +152,7 @@
                         if(isset($_SESSION['login_user']))   
                         {  ?>
                                 <li><a href = "profile.php" style= "margin-top:27px; margin-left: 10px;  font-size: 15px;">PROFILE</a></li>
-                                <li> <a href = "chatnew.php" style= "margin-top: 27px; margin-left: 180px; "> <span class = "glyphicon glyphicon-envelope">&nbsp<span class = "badge bg-green">
+                                <li> <a href = "chatnew.php" style= "margin-top: 27px;  "> <span class = "glyphicon glyphicon-envelope">&nbsp<span class = "badge bg-green">
                                     </span></a>
                                 </li>
                                 <li> <a href = "profile.php" style= "margin-top: 24px;">
@@ -170,8 +169,8 @@
                             }
                         else   //if a user not login then show login &sign up option
                         { ?>
-                                <li><a href="login.php" ><span class = "glyphicon glyphicon-log-in" style= "margin-top: 29px;  font-size: 15px; margin-left: 200px;">LOGIN</span></a></li>	
-                                <li><a href="register.php"><span class = "glyphicon glyphicon-user" style= "margin-top: 29px;  font-size: 15px;">SIGNUP</span></a></li>
+                                <li><a href="login.php" ><span class = "glyphicon glyphicon-log-in" style= "margin-top: 27px;  font-size: 15px;">LOGIN</span></a></li>	
+                                <li><a href="register.php"><span class = "glyphicon glyphicon-user" style= "margin-top: 27px;  font-size: 15px;">SIGNUP</span></a></li>
                         <?php
                         } 
                         ?> 
@@ -210,4 +209,3 @@
         </script>
     </body>
 </html>
-

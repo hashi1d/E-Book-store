@@ -20,7 +20,6 @@
   margin-right:auto;
   width: 60%;
   padding: 50px;
-  
 }
 
 /* Clear floats after the columns */
@@ -49,7 +48,6 @@
 img {
   border-radius: 50%;
 }
-
 .h2{
   text-align:center; 
   color:#5d2a5b;
@@ -85,17 +83,20 @@ img {
 }
 
 
+
+
+
+
 </style>
 </head>
 <body>
-<h2 class = "h2" > We lose ourselves in books, we find ourselves there too...</h2>
-<p  class = "p" ><i>Books let you travel without moving your feet</i></p>
+<h2 class ="h2"> We lose ourselves in books, we find ourselves there too...</h2>
+<p class = "p"><i>Books let you travel without moving your feet</i></p>
 
-<div class="row">
   <div class="column" style="background-color:#b35c5c;">
-  <img src="images/ac.jpg" alt="" style="width:100px">
-    <h2 class = "h21">Academic & Education</h2>
-    <p class = "p1"><i>Academic" Education is generally defined as education which has learning as it's primary purpose.</i></p>
+  <img src="images/ac.jpg" alt="" style="width:100px; display:block; margin-left: auto; margin-right:auto;">
+    <h2 class= "h21" >Academic & Education</h2>
+    <p class ="p"><i>Academic" Education is generally defined as education which has learning as it's primary purpose.</i></p>
     <ul>
     <a href = "history.php"> <li > <img src="images/cat/his.jpg" alt="" style="width:40px"> History  </li></a>
     <br>

@@ -15,7 +15,8 @@
 
 /* Create two equal columns that floats next to each other */
 .column {
-  float: left;
+  margin-left:auto;
+  margin-right:auto;
   width: 60%;
   padding: 50px;
 }
@@ -47,230 +48,58 @@ img {
   border-radius: 50%;
 }
 
-
-
-/*  this styling is for qupote slide show */
-/* for a slide show  */
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0;}
-
-/* Slideshow container */
-.slideshow-container {
-  position: relative;
-  background-image: url("images/b.jpg");
-  background-repeat: no-repeat;
+.h2{
+  text-align:center; 
+  color:#5d2a5b;
+}
+.p{
+   text-align:center;
+   color:#b54a68;
+   
 }
 
-/* Slides */
-.mySlides {
-  display: none;
-  padding: 80px;
-  text-align: center;
+.h21{
+  text-align:center;
+}
+.p1{
+  color:#fff;
+  font-size:17px;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -30px;
-  padding: 16px;
-  color: #888;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+@media screen and (max-width:800px){
+.h2{
+  color:green;
 }
 
-/* Position the "next button" to the right */
-.next {
-  position: absolute;
-  right: 0;
-  border-radius: 3px 0 0 3px;
+.p{
+  color:blue;
+  font-size: 15px;
+}
+.p1{
+  color:#fff;
+  font-size:20px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: blue;
-  color: white;
 }
 
-/* The dot/bullet/indicator container */
-.dot-container {
-    text-align: center;
-    padding: 20px;
-    background: #ddd;
-}
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-/* Add a background color to the active dot/circle */
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Add an italic font style to all quotes */
-q {font-style: italic; color: #fff}
-
-/* Add a blue color to the author */
-.author {color: cornflowerblue;}
-
-  /* this is for tranparent box */
-
-  .flip-box {
-  background-color: transparent;
-  width: 300px;
-  height: 200px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px;
-}
-
-.flip-box-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-.flip-box:hover .flip-box-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-box-front, .flip-box-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.flip-box-front {
-  background-color: brown;
-  color: black;
-}
-
-.flip-box-back {
-  background-color: #058472;
-  color: white;
-  transform: rotateY(180deg);
-}
+  
 </style>
 </head>
 <body>
 
-<h2 style = "margin-left: 20px; color:#5d2a5b"> We lose ourselves in books, we find ourselves there too...</h2>
-<p style = "margin-left: 130px; color:#b54a68"><i>Books let you travel without moving your feet</i></p>
-
-<!--  for slide show 
-<div class="slideshow-container">
-
-<div class="mySlides">
-  <q>Books are good company, in sad times and happy times, for books are people – people who have managed to stay alive by hiding between the covers of a book</q>
-  <p class="author">- E.B. White</p>
-</div>
-
-<div class="mySlides">
-  <q>A book is a garden, an orchard, a storehouse, a party, a company by the way, a counselor, a multitude of counselors.</q>
-  <p class="author">- Charles Baudelaire</p>
-</div>
-
-<div class="mySlides">
-  <q>A great book should leave you with many experiences, and slightly exhausted at the end. You live several lives while reading</q>
-  <p class="author">-  William Styron</p>
-</div>
-
-<div class="mySlides">
-<q>No man can be called friendless who has God and the companionship of good books</q>
-<p class="author">-  Elizabeth Barrett Browning</p>
-</div>
-
-<div class="mySlides">
-  <q>It is a good rule after reading a new book, never to allow yourself another new one till you have read an old one in between</q>
-  <p class="author">-   C.S. Lewis</p>
-</div>
-
-<div class="mySlides">
-  <q>A half-read book is a half-finished love affair.</q>
-  <p class="author">-  David Mitchell</p>
-</div>
-
-<div class="mySlides">
-  <q>Some of these things are true and some of them lies. But they are all good stories.</q>
-  <p class="author">-  Hilary Mantel</p>
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
-
-</div>
-
-<div class="dot-container">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-  <span class="dot" onclick="currentSlide(4)"></span> 
-  <span class="dot" onclick="currentSlide(5)"></span> 
-  <span class="dot" onclick="currentSlide(6)"></span> 
-  <span class="dot" onclick="currentSlide(7)"></span> 
-  </div>
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
-end of theslide show -->
+<h2 class= "h2" > We lose ourselves in books, we find ourselves there too...</h2>
+<p class= "p" ><i>Books let you travel without moving your feet</i></p>
 
 
-
- <!--<div id="btnContainer">
- <button class="btn active" onclick="gridView()"><i class="fa fa-th-large"></i>  LIST</button>
-</div>  -->
-t
 
           
 <div class="row">
   <div class="column" style="background-color:#699e8b;">
-  <img src="images/life2.jpg" alt="" style="width:100px">
-    <h2>Life Style</h2>
-    <p><i>Lifestyle is a way of life established by a society, culture, group or individual. This includes patterns of behavior, interaction, consumption, work, activity and interests that describe how a person spends their time</i></p>
-    <ul>
+  <img src="images/life2.jpg" alt="" style="width:100px; display:block; margin-left: auto; margin-right:auto;">
+    <h2 class= "h21" > Life Style</h2>
+    <p class= "p1" ><i>Lifestyle is a way of life established by a society, culture, group or individual. This includes patterns of behavior, interaction, consumption, work, activity and interests that describe how a person spends their time</i></p>
+    <ul class = "ul">
     <a href = "lifes.php"> <li > <img src="images/fasb.jpg" alt="" style="width:40px"> Fashion & Beauty  </li></a>
     <br>
      <a href = "home & garden.php"> <li>  <img src="images/hg2.jpg" alt="" style="width:30px">Home & Garden </li> </a>
@@ -312,21 +141,6 @@ for (var i = 0; i < btns.length; i++) {
 }
 </script>
  
-<div class = "next" style= "float:right;  margin-top: 20px;">
-					<h2 style = "color:white; float: right;  margin-top: -500px; margin-right:220px;"> Top most audio</h2>
-				
-  <div class="flip-box">
-  <div class="flip-box-inner">
-    <div class="flip-box-front">
-	  <h2>Life Style</h2>
-	  <p>Life's good when it's lived for oneself; it's great when lived for others. </p>
-    </div>
-    <div class="flip-box-back">
-      <h2></h2>
- <p> Let others lead small lives,but not you.Let others argue over small things,but not you.Let others cry over small hurts,but not you</p>
-    </div>
-  </div>
-</div>
 
 			</div>
 

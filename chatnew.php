@@ -1,7 +1,7 @@
 
 <?php
 	include "connection.php";
-	include "topnav.php";
+	include "headerthird.php";
 ?>
 
 <!DOCTYPE html>
@@ -74,7 +74,12 @@
 }
 
 @media only screen and (min-width:280px){
-
+	body
+	{
+			background-image: url("images/chatchat.jpg");
+			background-repeat: no-repeat;
+			background-size:cover;
+	}
 
 	.wrapper
 {

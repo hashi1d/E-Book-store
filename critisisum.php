@@ -1,7 +1,7 @@
 <?php
   
   include "connection.php";
-  include "topnav.php";
+  include "headerthird.php";
   //session_start();
 
   ?>
@@ -47,8 +47,32 @@
                   height: 300px;
                   overflow: auto;
               }
-      
-              @media only screen and (min-width:280px){
+              
+              .h1{
+                text-align:center ;
+                color: red;
+                font-size: 35px;
+
+              }
+
+              .h2{
+                text-align:center;
+                font-size: 30px;
+              }
+
+              .p{
+                color:#fff;
+                font-size: 14px;
+              }
+              @media only screen and (min-width: 280px){
+
+                body
+              {
+                  background-image: url("images/c.jpg");
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-position: center center;
+              }
                 .wrapper   /*box */
               {
                   display: block;
@@ -69,42 +93,30 @@
               }
               .scroll
               {
-                display: block;
+                 display: block;
                   width: 100%;
                   height: 300px;
                   overflow: auto;
+              }
+              .h1{
+                text-align:center ;
+                color: red;
+                font-size: 40px;
+
+              }
+              .h2{
+                text-align:center;
+                font-size: 35px;
+              }
+              .p{
+                color:#fff;
+                font-size: 14px;
+                
               }
 
               }
               
-              @media only screen and (min-height:auto){
-                .wrapper   /*box */
-              {
-                  display: block;
-                  padding: 10px;
-                  margin: -1px auto;   /* automatically resize the position */
-                  width:900px;
-                  height: 550px;
-                  background-color: black;
-                  opacity: .8;
-                  color: white;
-              } 
-              .form-control     /* form styling */
-              {
-                display: block;
-                  height: 50px;
-                  width: 40%;
-                  
-              }
-              .scroll
-              {
-                  display: block;
-                  width: 100%;
-                  height: 300px;
-                  overflow: auto;
-              }
-
-              }
+              
 
           </style>
 
@@ -113,12 +125,12 @@
                              <!-- creating box -->
             <div class="wrapper">
                     
-                <h1 style = "text-align:center ;">Idea Zone</h1>
-                <h2 style = "text-align:center;"> Publish your openions about books</h2>
+                <h1  class = "h1 ">Idea Zone</h1>
+                <h2 class = "h2 "> Publish your opinions about books</h2>
                 <br>
                 <br>
             
-                <p style ="font-color:red;"> Providing ideas for a book that you read is very interesting habit. These ideas are based on how reader feel about the book.and how those characters in the book move with the real lives. 
+                <p class = "p" > Providing ideas for a book that you read is very interesting habit. These ideas are based on how reader feel about the book.and how those characters in the book move with the real lives. 
                     <br> You all are welcome to share your hidden deep ideas about these books that you read..This will be a good platform to share your thoughts and feeling about books....
                 </p>
                 

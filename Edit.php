@@ -1,5 +1,5 @@
 <?php
-	include "topnav.php";
+	include "headerthird.php";
 	include "connection.php";
 ?>
 <!DOCTYPE html>
@@ -16,27 +16,34 @@
 	 }
 		.form-control
 		{
-			display:none;
+			
 			width:250px;
 			height: 38px;
 		}
 		.form1
 		{
-			display:none;
+			
 			margin:0 540px;
         
 		}
 		label
 		{
-			display:none;
+			
 			color: black;
 		}
 
 
 		@media only screen and (min-width:280px){
+			body{
+
+			background-image: url("images/edit.jpg");
+			background-size:cover;
+
+        }
 			
 		.form-control
 		{
+			
 			display:block;
 			width:250px;
 			height: 38px;
@@ -56,29 +63,7 @@
 
 		}
 		
-		@media only screen and (min-height:540px){
-			
-		.form-control
-		{
-			display:block;
-			width:250px;
-			height: 38px;
-		}
-		.form1
-		{
-			display:block;
-			margin:0 540px;
-        
-		}
-		label
-		{
-			display:block;
-			color: black;
-		}
-
-
-		}	
-
+		
 	</style>
 </head>
 <body >

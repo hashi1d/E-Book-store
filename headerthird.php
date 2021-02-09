@@ -37,10 +37,8 @@
                 
             } 
             .logo img{
-                height: 150px;
-                width:   150px;
-                padding-top: 10px;
-                margin-left: 0px;
+                height: 70px;
+                width:   70px;
             }
             
             @media screen and (max-width: 768px) {
@@ -57,14 +55,14 @@
                     display: block;
                 }
                 .icon-drop {
-                    margin-top:500px;
-                    display: block;
-                    align-items: right ;
                 }
             }
             @media screen and (min-width: 768px) {
                 .icon-drop {
                     display: none;
+                }
+                .glyphicon-log-in {
+                	margin-left: 10vw;
                 }
             }
 
@@ -118,7 +116,7 @@
                 <div class="navbar-header">
                     <div class="logo">
                         <!--<h6 class="logo-header"  style="color: white; font-size: 16px; line-height: 21px; margin-top: 2px;  font-style: italic">Find the next book in your list</h6> -->
-                        <img class = "img" style = "margin-top: -34px; margin-left: -5px;"src="images/bklogo.jpg" >
+                        <img class = "img" style = "margin-left: -30px;"src="images/bklogo.jpg" >
                     </div>
                    <!-- <a class="navbar-brand active" href="#" style= "color:blue; margin-left:125px; margin-top: 25px; font-size: 25px;">E-book Store</a> -->
                 </div>
@@ -126,12 +124,12 @@
                     <i class="fa fa-bars"></i>
                 </a>
                 <ul class="nav navbar-nav" id="myTopnav">
-                    <li><a href="index.php" style= "margin-top: 25px;  font-size: 17px;">HOME</a></li>
-                    <li><a href="feedback.php" style= "margin-top: 25px;  font-size: 17px;">FEEDBACK</a></li>
-                    <li><a href="book1.php" style= "margin-top: 25px;  font-size: 17px;">BOOKS</a></li>
+                    <li><a href="index.php" style= "margin-top: 13px;  font-size: 17px;">HOME</a></li>
+                    <li><a href="feedback.php" style= "margin-top: 13px;  font-size: 17px;">FEEDBACK</a></li>
+                    <li><a href="book1.php" style= "margin-top: 13px;  font-size: 17px;">BOOKS</a></li>
                     <!--<li><a href="feedback.php"   style= "margin-top: 15px;  font-size: 15px;">CATEGORY </a> -->
                     <li>
-                        <div class="dropdown" style= "margin-top: 15px;  font-size: 15px;">
+                        <div class="dropdown" style= "margin-top: 3px;  font-size: 15px;">
                             <button onclick="myFunction()" class="dropbtn">CATEGORY </button>
                             <div id="myDropdown" class="dropdown-content">
                                 <a href="nextpagelife.php">Life Style</a>
@@ -152,11 +150,11 @@
                     <?php
                         if(isset($_SESSION['login_user']))   
                         {  ?>
-                                <li><a href = "profile.php" style= "margin-top:27px; margin-left: 10px;  font-size: 15px;">PROFILE</a></li>
-                                <li> <a href = "chatnew.php" style= "margin-top: 27px; margin-left: 180px; "> <span class = "glyphicon glyphicon-envelope">&nbsp<span class = "badge bg-green">
+                                <li><a href = "profile.php" style= "margin-top:13px; margin-left: 10px;  font-size: 15px;">PROFILE</a></li>
+                                <li> <a href = "chatnew.php" style= "margin-top: 13px; margin-left: 20px; "> <span class = "glyphicon glyphicon-envelope">&nbsp<span class = "badge bg-green">
                                     </span></a>
                                 </li>
-                                <li> <a href = "profile.php" style= "margin-top: 24px;">
+                                <li> <a href = "profile.php" style= "margin-top: 13px;">
                                     <div style ="color: white">
                                     <?php
                                         echo "<img class='img-circle profile_img' height=30 width=30 src='images/p.jpg ".$_SESSION['pic']."'>";
@@ -165,13 +163,13 @@
                                     </div>	
                                     </a>
                                 </li>
-                                <li><a href="logout.php" style= "margin-top: 27px;  font-size: 15px;"><span class = "glyphicon glyphicon-log-out">LOGOUT</span></a></li>
+                                <li><a href="logout.php" style= "margin-top: 13px;  font-size: 15px;"><span class = "glyphicon glyphicon-log-out">LOGOUT</span></a></li>
                             <?php  
                             }
                         else   //if a user not login then show login &sign up option
                         { ?>
-                                <li><a href="login.php" ><span class = "glyphicon glyphicon-log-in" style= "margin-top: 29px;  font-size: 15px; margin-left: 200px;">LOGIN</span></a></li>	
-                                <li><a href="register.php"><span class = "glyphicon glyphicon-user" style= "margin-top: 29px;  font-size: 15px;">SIGNUP</span></a></li>
+                                <li><a href="login.php" ><span class = "glyphicon glyphicon-log-in" style= "margin-top: 13px;  font-size: 15px;">LOGIN</span></a></li>	
+                                <li><a href="register.php"><span class = "glyphicon glyphicon-user" style= "margin-top: 13px;  font-size: 15px;">SIGNUP</span></a></li>
                         <?php
                         } 
                         ?> 
@@ -210,4 +208,5 @@
         </script>
     </body>
 </html>
+
 

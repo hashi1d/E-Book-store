@@ -150,7 +150,7 @@ $count = mysqli_num_rows($res);
 
 }
 
-if($count == 0)
+if( $count == 0)
 {
 
     ?>

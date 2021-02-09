@@ -1,7 +1,7 @@
 <?php
   
   include "connection.php";
-  include "topnav.php";
+  include "headerthird.php";
   //session_start();
   
 ?>
@@ -49,6 +49,14 @@
 		}
 		
 		@media only screen and (min-width:280px){
+			body
+    	{
+    		background-image: url("images/feedback2.jpg");
+			background-size: cover;
+			background-position: center center;
+    	}
+
+
 
 			.wrapper
     	{

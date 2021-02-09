@@ -130,14 +130,56 @@ q {font-style: italic; color: #fff}
 .author {color: cornflowerblue;}
 
 
+.h2z{
+  text-align:center;
+  color:#5d2a5b;
+  font-size: 30px;
+}
+.p{
+  text-align:center;
+  color:#b54a68;
+  font-size: 20px;
+}
+
+.lifeh{
+   font-size:28px;
+   color:black;
+   margin-top:-29px;
+}
+
+.lifep{
+  
+}
+@media screen and (max-width:800px){
+  .h2z{
+  text-align:center;
+  color:purple;
+  font-size: 34px;
+}
+.p{
+  text-align:center;
+  color:blue;
+  font-size: 26px;
+}
+
+.lifeh{
+   font-size:28px;
+   color:black;
+   margin-top:-29px;
+  
+}
+.lifep{
+  
+}
+}
 
 
 </style>
 </head>
 <body>
 
-<h2 class = "h2" style = "margin-left: 270px; color:#5d2a5b"> We lose ourselves in books, we find ourselves there too...</h2>
-<p style = "margin-left: 490px; color:#b54a68"><i>Books let you travel without moving your feet</i></p>
+<h2 class = "h2z" > We lose ourselves in books, we find ourselves there too...</h2>
+<p  class = "p"><i>Books let you travel without moving your feet</i></p>
 
 <!--  for slide show -->
 <div class="slideshow-container">
@@ -233,8 +275,8 @@ function showSlides(n) {
 <div class="row">
   <div class="column" style="background-color:#699e8b;">
   <img class = "life" src="images/life2.jpg" alt="" style=" margin-top:-130px; width:100px">
-    <h2 class = "lifeh" style= "margin-top:-29px;">Life Style</h2>
-    <p class = "lifep"><i>Lifestyle is a way of life established by a society, culture, group or individual. This includes patterns of behavior, interaction, consumption, work, activity and interests that describe how a person spends their time</i></p>
+    <h2 class = "lifeh" >Life Style</h2>
+    <p class = "lifep"><i class = "lifep">Lifestyle is a way of life established by a society, culture, group or individual. This includes patterns of behavior, interaction, consumption, work, activity and interests that describe how a person spends their time</i></p>
     <ul>
     <a href = "lifes.php"> <li style= "font-size:18px; color:white;"> <img src="images/fasb.jpg" alt="" style="width:40px"> Fashion & Beauty  </li></a>
     <br>

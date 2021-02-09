@@ -6,24 +6,24 @@
 <head>
 
 	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">  as my bootsrap links are not working i used this method -->
    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" >
-    <!--<link rel = "stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" >
+    <link rel = "stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src = "https://ajax.gooleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style type = "text/css">
 .logo{
        padding-left: 20px;
        float: left;
-       padding-top: 10 px;
+       padding-top: 10px;
        
   }
   .logo img{
-      height: 150 px;
+      height: 150px;
       width:   150px;
       padding-top: 10px;
       padding-left: 20px;
@@ -31,10 +31,44 @@
     .container-fluid{
       
       background-color: #060505;
+      display:flex;
+      justify-content:space-between;
+    }
+    .navbar-header{
+        display:flex;
+        flex-direction: column;
     }
 
-    
-   
+     .logo-header{
+         color:rgb(255 255 255);
+         font-weight:700;
+     }
+
+     @media only screen and (max-width:768px){
+         .navbar-header{
+             display:flex;
+             flex-direction:column;
+         }
+         .navbar-nav{
+             display:none;
+         }
+         .nav .navbar-nav .show{
+             display:block;
+         }
+         .icon-drop {
+                    margin-top:230px;
+                    display: block;
+                    align-items: center ;
+                }
+            }
+            @media screen and (min-width: 768px) {
+                .icon-drop {
+                    display: none;
+                }
+            }
+     
+
+
 /*     This is for drop down  */
 
 .dropbtn {
@@ -77,32 +111,8 @@
 .dropdown a:hover {background-color: #ddd;}
 
 .show {display: block;}
-/* responsive */
 
-@media screen and (max-width: 768px) {
-                .navbar-header {
-                display: flex;
-                flex-direction: column;
-                
-                
-            }
-                .navbar-nav {
-                    display: none;
-                }
-                .nav .navbar-nav .show {
-                    display: block;
-                }
-                .icon-drop {
-                    margin-top:500px;
-                    display: block;
-                    align-items: right ;
-                }
-            }
-            @media screen and (min-width: 768px) {
-                .icon-drop {
-                    display: none;
-                }
-            }
+
 
 
 
@@ -117,7 +127,7 @@
 <nav class="navbar navbar-inverse" >
   <div class="container-fluid">
     <div class="navbar-header">
-    <div class="logo"> <h1 style="color: white; font-size: 16px; line-height: 21px; margin-top: 2px; margin-left: 3px; font-style: italic">Find the next book in your list</h1>
+    <div class="logo"> <h6 class = "logo-header" style="color: white; font-size: 16px; line-height: 21px; margin-top: 2px; margin-left: 3px; font-style: italic">Find the next book in your list</h6>
 			<img src="images/bklogo.jpg">
       </div>
       <a class="navbar-brand active" href="#" style= "color:blue; margin-left:120px; margin-top: 12px; font-size: 25px;"  >E-book Store</a>
@@ -125,12 +135,12 @@
     <a href="javascript:void(0);" class="icon icon-drop" onclick="responsiveFunction()">
                     <i class="fa fa-bars"></i>
                 </a>
-    <ul class="nav navbar-nav">
+    <ul class="nav navbar-nav" id = "myTopnav">
       <li><a href="index.php"   style= "margin-top: 15px;  font-size: 15px;">HOME</a></li>
       <li><a href="feedback.php"   style= "margin-top: 15px;  font-size: 15px;">FEEDBACK</a></li>
       <li><a href="book1.php"   style= "margin-top: 15px;  font-size: 15px;">BOOKS</a></li>
       <!--<li><a href="feedback.php"   style= "margin-top: 15px;  font-size: 15px;">CATEGORY </a> -->
-      <div class="dropdown">
+      <div class="dropdown" style= "margin-top:25px; font-size:15px;">
   <button onclick="myFunction()" class="dropbtn">CATEGORY </button>
   <div id="myDropdown" class="dropdown-content">
     <a href="nextpagelife.php">Life Style</a>
@@ -228,4 +238,5 @@ window.onclick = function(event) {
 </script>
 </body>
 </html>
+
 

@@ -1,7 +1,7 @@
 <?php 
 
 	include "connection.php";
-	include "topnav.php";
+	include "headerthird.php";
  ?>
  <!DOCTYPE html>
  <html>
@@ -30,6 +30,7 @@
 				display:block;
 				background-image: url("images/pp.jpg");
 				background-repeat: no-repeat;	
+				background-size:cover;
 	     }
  			     .wrapper{
 				display:block;

@@ -15,7 +15,8 @@
 
 /* Create two equal columns that floats next to each other */
 .column {
-  float: left;
+  margin-left:auto;
+  margin-right:auto;
   width: 60%;
   padding: 50px;
 }
@@ -47,92 +48,51 @@ img {
   border-radius: 50%;
 }
 
-
-
-/*  this styling is for qupote slide show */
-/* for a slide show  */
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0;}
-
-/* Slideshow container */
-.slideshow-container {
-  position: relative;
-  background-image: url("images/b.jpg");
-  background-repeat: no-repeat;
+.h2{
+  text-align:center; 
+  color:#5d2a5b;
+}
+.p{
+   text-align:center;
+   color:#b54a68;
+   
 }
 
-/* Slides */
-.mySlides {
-  display: none;
-  padding: 80px;
-  text-align: center;
+.h21{
+  text-align:center;
+}
+.p1{
+  color:#fff;
+  font-size:17px;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -30px;
-  padding: 16px;
-  color: #888;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+@media screen and (max-width:800px){
+.h2{
+  color:green;
 }
 
-/* Position the "next button" to the right */
-.next {
-  position: absolute;
-  right: 0;
-  border-radius: 3px 0 0 3px;
+.p{
+  color:blue;
+  font-size: 15px;
+}
+.p1{
+  color:#fff;
+  font-size:20px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: blue;
-  color: white;
 }
 
-/* The dot/bullet/indicator container */
-.dot-container {
-    text-align: center;
-    padding: 20px;
-    background: #ddd;
-}
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
 
-/* Add a background color to the active dot/circle */
-.active, .dot:hover {
-  background-color: #717171;
-}
 
-/* Add an italic font style to all quotes */
-q {font-style: italic; color: #fff}
-
-/* Add a blue color to the author */
-.author {color: cornflowerblue;}
 
 
 </style>
 </head>
 <body>
 
-<h2 style = "margin-left: 20px; color:#5d2a5b"> We lose ourselves in books, we find ourselves there too...</h2>
-<p style = "margin-left: 130px; color:#b54a68"><i>Books let you travel without moving your feet</i></p>
+<h2 class = "h2"> We lose ourselves in books, we find ourselves there too...</h2>
+<p class = "p"><i>Books let you travel without moving your feet</i></p>
 
 
 
@@ -140,9 +100,9 @@ q {font-style: italic; color: #fff}
           
 <div class="row">
   <div class="column" style="background-color:#b5b059;">
-  <img src="images/cat/tec.jpg" alt="" style="width:100px">
-    <h2>Technology</h2>
-    <p><i> Technology can be most broadly defined as the entities, both material and immaterial, created by the application of mental and physical effort in order to achieve some value. In this usage, technology refers to tools and machines that may be used to solve real-world problems. </i></p>
+  <img src="images/cat/tec.jpg" alt="" style="width:100px; display:block; margin-left: auto; margin-right:auto;">
+    <h2 class ="h21">Technology</h2>
+    <p class ="p1"><i> Technology can be most broadly defined as the entities, both material and immaterial, created by the application of mental and physical effort in order to achieve some value. In this usage, technology refers to tools and machines that may be used to solve real-world problems. </i></p>
     <ul>
     <a href = "soft.php"> <li > <img src="images/cat/soft.jpg" alt="" style="width:40px"> Software </li></a>
     <br>

@@ -1,5 +1,5 @@
 <?php
-include "topnav.php";
+include "headerthird.php";
 include "connection.php";
 
 ?>
@@ -41,8 +41,20 @@ include "connection.php";
             box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); 
             position: right;
         } 
+        .h1{
 
+            font-size:40px; 
+            margin-left:300px;
+        }
 
+        .h2{
+            color: red;
+            font-size: 20px;
+            line-height: 21px;
+            margin-top: -1px;
+            margin-left: 200px;
+            font-style: italic;
+        }
         .fa{
     margin: 0px 5px;
     padding:2px;  /* take text inside to the circle */
@@ -79,7 +91,7 @@ include "connection.php";
 }
 
 @media only screen and (min-width:280px){
-    .aboutsec
+              .aboutsec
               {
                   display:block;
                   padding: 30px;
@@ -90,7 +102,19 @@ include "connection.php";
                   opacity: .8;
                   color: white;
               }
+              .h1{
 
+                font-size:50px; 
+                margin-left:300px;
+                }
+                .h2{
+            color: green;
+            font-size: 25px;
+            line-height: 21px;
+            margin-top: -1px;
+            margin-left: 200px;
+            font-style: italic;
+        }
 
 }
         
@@ -100,11 +124,11 @@ include "connection.php";
 <body>
     <div class="aboutsec" >
     
-            <h1 style = "font-size:40px; margin-left:300px"> About Us</h1>
+            <h1 class = "h1" > About Us</h1>
             <br>
             <p class="text" style="color: red; font-size: 20px; line-height: 21px; margin-top: -1px; margin-left: 130px; font-style: italic">
                 " Something very magical can happen when you read a good book.
-                     <br><h2 style="color: red; font-size: 20px; line-height: 21px; margin-top: -1px; margin-left: 200px; font-style: italic">They let you travel without moving your feet"</h2>
+                     <br><h2 class = "h2 "style="color: red; font-size: 20px; line-height: 21px; margin-top: -1px; margin-left: 200px; font-style: italic">They let you travel without moving your feet"</h2>
             </p>
    
             <br> <br> 

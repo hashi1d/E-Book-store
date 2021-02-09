@@ -1,7 +1,7 @@
 <?php
 
 
-include "topnav.php";
+include "headerthird.php";
 include "connection.php";
 
 ?>
@@ -21,8 +21,8 @@ background-image:url("images/pass.jpg");
 
 .wrapper{
     margin: 0 auto ;
-    width: 400px;
-     height : 400px;
+    width: 410px;
+     height : 440px;
      opacity : .8;
      background-color : black;
      color : white;
@@ -34,13 +34,46 @@ background-image:url("images/pass.jpg");
 .form-control{
     width : 250px;
 }
+
+
+
+@media only screen and (min-width:280px){
+  body{
+
+height :650px;
+background-image:url("images/pass.jpg");
+background-image: no-repeat;
+background-size: cover;
+background-position: center center;
+
+}
+
+.wrapper{
+    margin: 0 auto ;
+    width: 400px;
+     height : 410px;
+     opacity : .8;
+     background-color : black;
+     color : white;
+     
+     
+     
+}
+
+.form-control{
+    width : 250px;
+}
+
+
+
+}
 </style>
 </head>
 <body>
 <div class= "wrapper">   <!-- form is inside the box -->
 
 <div style = "text-align:center;">
-<h1 style = "text-align: center; font-size: 35px; font-family: italic; " >  E-BOOK STORE </h1>
+<h1 style = "text-align: center; padding: 20px; font-size: 35px; font-family: italic; " >  E-BOOK STORE </h1>
 <h1 style = "text-align: center; font-size: 20px; font-family: italic; " >  Change password </h1>
 
 </div>

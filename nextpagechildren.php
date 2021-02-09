@@ -47,7 +47,6 @@
 img {
   border-radius: 50%;
 }
-
 .h2{
   text-align:center; 
   color:#5d2a5b;
@@ -62,7 +61,7 @@ img {
   text-align:center;
 }
 .p1{
-  color:#fff;
+  color:black;
   font-size:17px;
 }
 
@@ -76,36 +75,36 @@ img {
   font-size: 15px;
 }
 .p1{
-  color:#fff;
+  color:black;
   font-size:20px;
 }
 
 }
 
 
-  
+
+
+
 </style>
-
-
 </head>
 <body>
 
-<h2 class= "h2" > We lose ourselves in books, we find ourselves there too...</h2>
-<p  class= "p"  ><i>Books let you travel without moving your feet</i></p>
+<h2  class = "h2"> We lose ourselves in books, we find ourselves there too...</h2>
+<p  class = "p" ><i>Books let you travel without moving your feet</i></p>
 
 
 
 
-      
-<div class="row">
+          
+
+
   <div class="column" style="background-color:#f5e9af;">
-  <img src="images/cat/cy.jpg" alt="" style="width:100px">
-    <h2 class= "h21" >Children & Youth</h2>
-    <p class= "p1" ><i> 'youth', as those persons between the ages of 15 and 24 years, without prejudice to other definitions by Member States.therefore, children are those persons under the age of 14</i></p>
-    <ul class= "ul">
+  <img src="images/cat/cy.jpg" alt="" style="width:100px; display:block; margin-left: auto; margin-right:auto;">
+    <h2 class = "h21">Children & Youth</h2>
+    <p class = "p1"><i> 'youth', as those persons between the ages of 15 and 24 years, without prejudice to other definitions by Member States.therefore, children are those persons under the age of 14</i></p>
+    <ul>
     <a href = "par.php"> <li > <img src="images/cat/par.jpg" alt="" style="width:50px"> Parenting  </li></a>
     <br>
-</ul>
   </div>
 </div>
 
@@ -137,7 +136,6 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 </script>
-</div>
 
 </body>
 </html>

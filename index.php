@@ -1,6 +1,6 @@
 
 <?php
-include "topforindex.php";
+  include "topforindex.php";
 	include "connection.php";
 	
 ?>
@@ -43,9 +43,9 @@ and is wrapped around the whole page content, except for the footer in this exam
       <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
         tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       <div class="w3-row">
-        <div class="w3-col m8 s12">
+       <!-- <div class="w3-col m8 s12">
           <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-        </div>
+        </div>    -->
        <!-- <div class="w3-col m4 w3-hide-small">
           <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
         </div>-->
@@ -65,9 +65,9 @@ and is wrapped around the whole page content, except for the footer in this exam
     <div class="w3-container">
       <p>It’s now easier to jump into discussions with your friends about what they’re reading. Show some love for their latest review, or challenge them to defend why they couldn’t stand your favorite book!</p>
       <div class="w3-row">
-        <div class="w3-col m8 s12">
+        <!--<div class="w3-col m8 s12">
           <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-        </div>
+        </div>  -->
         <!--<div class="w3-col m4 w3-hide-small">
           <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
         </div>-->
