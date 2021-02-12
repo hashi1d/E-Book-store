@@ -18,7 +18,7 @@
  		.wrapper
  		{
 			display: none;
- 			width: 300px;
+ 			max-width: 300px;
  			margin: 0 auto;
 			 color: black;
 

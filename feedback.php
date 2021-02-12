@@ -1,7 +1,7 @@
 <?php
   
   include "connection.php";
-  include "headerthird.php";
+  include "topnav.php";
   //session_start();
   
 ?>
@@ -28,7 +28,7 @@
 			display:none;
     		padding: 10px;
     		margin: -1px auto;
-    		width:900px;
+    		max-width:900px;
     		height: 600px;
     		background-color: black;
     		opacity: .8;
@@ -36,9 +36,10 @@
     	}
     	.form-control
     	{
-			display:none;
+			display:block;
     		height: 70px;
-    		width: 60%;
+    		width: 80vw;
+			max-width: 800px;
     	}
     	.scroll
     	{
@@ -47,8 +48,11 @@
     		height: 300px;
     		overflow: auto;
 		}
+		.h4{
+			width:90vw;
+		}
 		
-		@media only screen and (min-width:280px){
+		@media only screen and (min-width: 280px){
 			body
     	{
     		background-image: url("images/feedback2.jpg");
@@ -63,7 +67,7 @@
 			display:block;
     		padding: 10px;
     		margin: -1px auto;
-    		width:900px;
+    		max-width:900px;
     		height: 600px;
     		background-color: black;
     		opacity: .8;
@@ -73,8 +77,12 @@
     	{
 			display:block;
     		height: 70px;
-    		width: 60%;
+    		width: 80vw;
+			max-width: 800px;
     	}
+		.h4{
+			width:90vw;
+		}
     	.scroll
     	{
 			display:block;
@@ -89,7 +97,7 @@
 <body>
 
 	<div class="wrapper">
-		<h4>If you have any suggesions or questions please comment below.</h4>
+		<h4 class = "h4">If you have any suggesions or questions please comment below.</h4>
 		<form style="" action="" method="post">
 			<input class="form-control" type="text" name="comment" placeholder="Write something..."><br>	
 			<input class="btn btn-default" type="submit" name="submit" value="Comment" style="width: 100px; height: 35px;">	<br>

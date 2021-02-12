@@ -24,10 +24,11 @@
               }
               .wrapper   /*box */
               {
-                display: none;
+                
                   padding: 10px;
                   margin: -1px auto;   /* automatically resize the position */
-                  width:900px;
+                  max-width:900px;
+                  width:90vw;
                   height: 550px;
                   background-color: black;
                   opacity: .8;
@@ -35,14 +36,14 @@
               } 
               .form-control     /* form styling */
               {
-                display: none;
+                
                   height: 50px;
                   width: 40%;
                   
               }
               .scroll
               {
-                display: none;
+                
                   width: 100%;
                   height: 300px;
                   overflow: auto;
@@ -78,7 +79,8 @@
                   display: block;
                   padding: 10px;
                   margin: -1px auto;   /* automatically resize the position */
-                  width:900px;
+                  max-width:900px;
+                  width:90vw;
                   height: 550px;
                   background-color: black;
                   opacity: .8;
