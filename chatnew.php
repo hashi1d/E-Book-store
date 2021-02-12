@@ -1,7 +1,7 @@
 
 <?php
 	include "connection.php";
-	include "headerthird.php";
+	include "topnav.php";
 ?>
 
 <!DOCTYPE html>
@@ -19,7 +19,7 @@
 	}
 .wrapper
 {
-	display:none;
+
 	height: 600px;
 	width: 500px;
 	background-color: black;
@@ -30,30 +30,30 @@
 }
 .form-control
 {
-	display:none;
+	
 	height: 47px;
 	width: 76%;
 }
 .msg
 {
-	display:none;
+	
 	height: 450px;
 	overflow-y: scroll;
 }
 .btn-info
 {
-	display:none;
+	
 	background-color: #02c5b6;
 }
 .chat
 {
-	display:none;
+	
 	display: flex;
 	flex-flow:row wrap;
 }
 .user .chatbox
 {
-	display:none;
+
 	height: 50px;
 	width: 400px;
 	padding: 13px 10px;
@@ -64,7 +64,7 @@
 }
 .admin .chatbox
 {
-	display:none;
+
 	height: 50px;
 	width: 400px;
 	padding: 13px 10px;
@@ -73,7 +73,7 @@
 	border-radius: 10px;
 }
 
-@media only screen and (min-width:280px){
+@media only screen and (min-width:280px) and (max-width:768px){
 	body
 	{
 			background-image: url("images/chatchat.jpg");
@@ -85,7 +85,8 @@
 {
 	display:block;
 	height: 600px;
-	width: 500px;
+	max-width: 500px;
+	width: 50vw;
 	background-color: black;
 	opacity: .9;
 	color: white;
@@ -137,7 +138,6 @@
 	border-radius: 10px;
 }
 }
-
 
 
 </style>

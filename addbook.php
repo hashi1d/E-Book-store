@@ -22,7 +22,7 @@
 }
 
 .sidenav {
-  display:none;
+  
 	margin-top: 148px;  /*to see the top nav well without covering  */
   height: 100%;
   width: 0;
@@ -37,7 +37,7 @@
 }
 
 .sidenav a {
-  display:none;
+  
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 15px;
@@ -47,12 +47,12 @@
 }
 
 .sidenav a:hover {
-  display:none;
+  
   color: #f1f1f1;
 }
 
 .sidenav .closebtn {
-  display:none;
+  
   position: absolute;
   top: 0;
   right: 25px;
@@ -71,7 +71,7 @@
 }
 	
 .one:hover{
-   display:none;
+  
     color:white;
     width:300px;
     height:50px;
@@ -80,21 +80,21 @@
 }
 
  .b{
-     display:none;
+     
      width : 300px;
      margin : 0px auto;  /*  to get to form into middle possition */
      color :  black;
  }
    .form-control
    {
-     display:none;
+     
      background-color: black;
      color : white;
    }
 
 
 
-   @media screen and (min-width: 280px){
+   @media screen and (min-width: 280px) and (max-width: 768px){
     .srch{
       display:block;
 		padding-left: 1200px;

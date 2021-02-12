@@ -1,7 +1,7 @@
 <?php 
 
 	include "connection.php";
-	include "headerthird.php";
+	include "topnav.php";
  ?>
  <!DOCTYPE html>
  <html>
@@ -9,7 +9,7 @@
  	<title>Profile</title>
 	 <style type="text/css">
 	 body{
-		display: none;
+		
 		background-image: url("images/pp.jpg");
 		background-repeat: no-repeat;
 		
@@ -17,13 +17,13 @@
 	 }
  		.wrapper
  		{
-			display: none;
- 			max-width: 300px;
+			
+ 			width: 300px;
  			margin: 0 auto;
 			 color: black;
 
 		 }
-			 @media only screen and (min-width:280px){
+			 @media only screen and (min-width:280px)and (max-width:768px){
 
 
 				body{

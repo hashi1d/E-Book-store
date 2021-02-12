@@ -67,7 +67,7 @@ img {
   font-size:17px;
 }
 
-@media screen and (max-width:800px){
+@media screen and (min-width: 280px)and(max-width:768px){
 .h2{
   color:green;
 }

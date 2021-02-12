@@ -25,7 +25,7 @@
     	}
     	.wrapper
     	{
-			display:none;
+		
     		padding: 10px;
     		margin: -1px auto;
     		max-width:900px;
@@ -43,7 +43,7 @@
     	}
     	.scroll
     	{
-			display:none;
+			
     		width: 100%;
     		height: 300px;
     		overflow: auto;
@@ -52,7 +52,7 @@
 			width:90vw;
 		}
 		
-		@media only screen and (min-width: 280px){
+		@media only screen and (min-width: 280px)and (max-width: 768px) {
 			body
     	{
     		background-image: url("images/feedback2.jpg");

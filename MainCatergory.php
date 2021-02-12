@@ -150,20 +150,63 @@ q {font-style: italic; color: #fff}
 .lifep{
   
 }
-@media screen and (max-width:800px){
+@media screen and (min-width:280px) and (max-width:768px){
+
+  * {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: center;
+  max-width: 500px;
+  width:50vw;
+  height: 100%;
+  padding: 150px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+img {
+  border-radius: 50%;
+}
+
+
+
   .h2z{
   text-align:center;
   color:purple;
-  font-size: 34px;
+  font-size: 40px;
 }
 .p{
   text-align:center;
   color:blue;
-  font-size: 26px;
+  font-size: 30px;
 }
 
 .lifeh{
-   font-size:28px;
+   font-size:30px;
    color:black;
    margin-top:-29px;
   

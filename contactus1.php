@@ -1,5 +1,5 @@
 <?php
- 
+  
   include "connection.php";
   
  ?>
@@ -136,6 +136,8 @@ input:focus, textarea:focus {
     <p class="usersubmit">
       <input type="submit" name="submit" value="Send" >
     </p>
+
+    <button href= "book1.php"> Go Back </button>
   </form>
   
 

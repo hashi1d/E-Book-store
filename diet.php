@@ -39,7 +39,7 @@ padding: 10px;
 }
 
 
-  @media only screen and (max-width: 1100px) {
+  @media only screen and (min-width:280px) and (max-width: 768px) {
     body {
       background-color: #585555;;
     }

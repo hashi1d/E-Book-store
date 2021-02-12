@@ -1,5 +1,5 @@
 <?php
-include "headerthird.php";
+include "topnav.php";
 include "connection.php";
 
 ?>
@@ -23,14 +23,13 @@ include "connection.php";
                   display: none;
                   padding: 30px;
                   margin: -1px auto;   /* automatically resize the position */
-                  width:900px;
+                  max-width:900px;
                   height: 1100px;
                   background-color: black;
                   opacity: .8;
                   color: white;
               }
-
-              .btn { 
+             /* .btn { 
             cursor: pointer; 
             border: 1px solid #3498db; 
             background-color: transparent; 
@@ -40,11 +39,13 @@ include "connection.php";
             font-size: 1.5em; 
             box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); 
             position: right;
-        } 
+        }   */
+              
         .h1{
-
+            
             font-size:40px; 
             margin-left:300px;
+            width:90vw;
         }
 
         .h2{
@@ -102,12 +103,24 @@ include "connection.php";
                   opacity: .8;
                   color: white;
               }
+            /*  .btn { 
+            cursor: pointer; 
+            border: 1px solid #3498db; 
+            background-color: transparent; 
+            height: 50px; 
+            width: 90px; 
+            color: #3498db; 
+            font-size: 1.5em; 
+            box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); 
+            position: right;
+        } */
               .h1{
-
+               
                 font-size:50px; 
                 margin-left:300px;
                 }
                 .h2{
+                   
             color: green;
             font-size: 25px;
             line-height: 21px;

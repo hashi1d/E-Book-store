@@ -1,5 +1,5 @@
 <?php
-	include "headerthird.php";
+	include "topnav.php";
 	include "connection.php";
 ?>
 <!DOCTYPE html>
@@ -31,7 +31,13 @@
 			
 			color: black;
 		}
-
+		.profile_info{
+			text-align: center;
+		}
+        .h2{
+			text-align: center;
+			color: black;
+		}
 
 		@media only screen and (min-width:280px){
 			body{
@@ -43,20 +49,28 @@
 			
 		.form-control
 		{
-			
+			position:center;
 			display:block;
 			width:250px;
 			height: 38px;
 		}
 		.form1
-		{
+		{   position:center;
 			display:block;
 			margin:0 540px;
         
 		}
 		label
 		{
+			position:center;
 			display:block;
+			color: black;
+		}
+		.profile_info{
+			text-align: center;
+		}
+		.h2{
+			text-align: center;
 			color: black;
 		}
 
@@ -68,7 +82,7 @@
 </head>
 <body >
 
-	<h2 style="text-align: center;color: black;">Edit Information</h2>
+	<h2 class = "h2">Edit Information</h2>
 	<?php
 		
 		$sql = "SELECT * FROM reg WHERE username='$_SESSION[login_user]'";
@@ -86,7 +100,7 @@
 
 	?>
 
-	<div class="profile_info" style="text-align: center;">
+	<div class="profile_info" >
 		<span style="color: red;">WELCOME</span>	
 		<h4 style="color: white;"><?php echo $_SESSION['login_user']; ?></h4>
 	</div><br><br>

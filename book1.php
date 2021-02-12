@@ -322,12 +322,13 @@ function closeNav() {
  
 </form>
 <!-- del next -->
-<form class = "navbar-form" method = "post" name = "form1">
-<input class = "form-control" type = "text" name = "bid" placeholder= "Enter Book ID to delete" required = ""  style ="float: left"> <!-- here flt left is for getting button near to the other srch one -->
-<button style = "background color: blue;" type  = "submit" name = "submit1" class = "btn btn-default">
+<!--<form class = "navbar-form" method = "post" name = "form1">
+<input class = "form-control" type = "text" name = "bid" placeholder= "Enter Book ID to delete" required = ""  style ="float: left">  here flt left is for getting button near to the other srch one -->
+<!--<button style = "background color: blue;" type  = "submit" name = "submit1" class = "btn btn-default">
 Delete
 </button>
-</form>
+</form> 
+-->
 </div> 
 
 <!-- request book 

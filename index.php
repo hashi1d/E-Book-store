@@ -1,6 +1,6 @@
 
 <?php
-  include "topforindex.php";
+  include "t.php";
 	include "connection.php";
 	
 ?>
@@ -11,8 +11,43 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.fa {
+  padding: 0px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+
 </style>
 <body class="w3-light-grey">
 
@@ -36,16 +71,15 @@ and is wrapped around the whole page content, except for the footer in this exam
     <img src="images/bi.jpg" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b>What is E-bok store?</b></h3>
-      <h5>Title description, <span class="w3-opacity"></span></h5>
+      <h5>Today a reader;  Tomorrow a leader!! <span class="w3-opacity"></span></h5>
     </div>
 
     <div class="w3-container">
-      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <p>This is a platform where people can find the next book in their list easily. Users can wander through their favourite books & expand their book collection easily without any cost This is a grate palce for people who know the value of books to intensify their reading habits.</p>
       <div class="w3-row">
-       <!-- <div class="w3-col m8 s12">
+       <div class="w3-col m8 s12">
           <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-        </div>    -->
+        </div>  
        <!-- <div class="w3-col m4 w3-hide-small">
           <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
         </div>-->
@@ -65,9 +99,9 @@ and is wrapped around the whole page content, except for the footer in this exam
     <div class="w3-container">
       <p>It’s now easier to jump into discussions with your friends about what they’re reading. Show some love for their latest review, or challenge them to defend why they couldn’t stand your favorite book!</p>
       <div class="w3-row">
-        <!--<div class="w3-col m8 s12">
+        <div class="w3-col m8 s12">
           <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-        </div>  -->
+        </div> 
         <!--<div class="w3-col m4 w3-hide-small">
           <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
         </div>-->
@@ -85,7 +119,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     <div class="w3-container w3-white">
       <h4><b>Inspire Me!</b></h4>
       <p>Looking for book recommendations? There's something here for you,</p>
-      <h6> Recomendations: </h6>
+      <h6> Recomendations: Academic & Education</h6>
     </div>
   </div><hr>
   
@@ -125,11 +159,15 @@ and is wrapped around the whole page content, except for the footer in this exam
       <h4>Tags</h4>
     </div>
     <div class="w3-container w3-white">
-    <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
+    <p><span class="w3-tag w3-black w3-margin-bottom"><a href = "aboutus.php">About Us</a></span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"><a href = "contactus1.php">Help</a></span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"><a href = "termsindex.php">Terms</a></span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"><a href = "chatguidlinesindex.php">Chat Guidlines</a></span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"><a href = "privacyindex.php">Privacy Policy</a></span> 
+      <h4>Connet</h4>
+
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+     
     </p>
     </div>
   </div>
@@ -143,15 +181,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 <!-- END w3-content -->
 </div>
 
-<!-- Footer -->
-<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
-  <!--<button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
-  <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>  -->
-  <?php
-			include "foter.php";	
-			?>
-</footer>
+
 
 </body>
 </html>

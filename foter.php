@@ -94,7 +94,7 @@
 
 </head>
 <body>
-    <footer class= "fu"  style= "background-color: black;">
+    <footer class= "fu"  style= "background-color: white;">
     <br>
     <h3 class="h3" style = "color: white; text-align: center;"> Contact us through social media</h3>
     <br>

@@ -1,7 +1,7 @@
 <?php
   
   include "connection.php";
-  include "headerthird.php";
+  include "topnav.php";
   //session_start();
 
   ?>
@@ -28,7 +28,6 @@
                   padding: 10px;
                   margin: -1px auto;   /* automatically resize the position */
                   max-width:900px;
-                  width:90vw;
                   height: 550px;
                   background-color: black;
                   opacity: .8;
@@ -38,7 +37,8 @@
               {
                 
                   height: 50px;
-                  width: 40%;
+                  max-width: 800px;
+                  width:80vw;
                   
               }
               .scroll
@@ -65,7 +65,7 @@
                 color:#fff;
                 font-size: 14px;
               }
-              @media only screen and (min-width: 280px){
+              @media only screen and (min-width: 280px) and (max-width: 768px){
 
                 body
               {
@@ -76,11 +76,10 @@
               }
                 .wrapper   /*box */
               {
-                  display: block;
+                  
                   padding: 10px;
                   margin: -1px auto;   /* automatically resize the position */
                   max-width:900px;
-                  width:90vw;
                   height: 550px;
                   background-color: black;
                   opacity: .8;
@@ -88,14 +87,15 @@
               } 
               .form-control     /* form styling */
               {
-                display: block;
+              
                   height: 50px;
-                  width: 40%;
+                  max-width: 800px;
+                  width:80vw;
                   
               }
               .scroll
               {
-                 display: block;
+                 
                   width: 100%;
                   height: 300px;
                   overflow: auto;

@@ -1,6 +1,6 @@
 <?php
   include "connection.php";
-  include "headerthird.php";
+  include "topnav.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -37,7 +37,7 @@ padding: 10px;
 
   @media only screen and (max-width: 1100px) {
     body {
-      background-color: #585555;;
+      background-color: #585555;
     }
     .container{
     width: 96%;
