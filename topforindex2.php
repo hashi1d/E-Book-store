@@ -95,7 +95,7 @@ body {
 				?>
 
 			<nav>
-      <a href="indextry.php">HELP</a>
+      <a href="contactus.php">HELP</a>
       <a href="aboutus.php">ABOUT_US</a>
       <a href="feedback.php">FEEDBACK</a>
           <a href="login.php">SIGNIN</a>

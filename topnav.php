@@ -116,7 +116,7 @@
                 <div class="navbar-header">
                     <div class="logo">
                         <!--<h6 class="logo-header"  style="color: white; font-size: 16px; line-height: 21px; margin-top: 2px;  font-style: italic">Find the next book in your list</h6> -->
-                        <img class = "img" style = "margin-left: -30px;"src="images/bklogo.jpg" >
+                        <img class = "img" style = "margin-left: -30px;"src="images/logo.jpg" >
                     </div>
                    <!-- <a class="navbar-brand active" href="#" style= "color:blue; margin-left:125px; margin-top: 25px; font-size: 25px;">E-book Store</a> -->
                 </div>
@@ -129,7 +129,7 @@
                     <li><a href="book1.php" style= "margin-top: 13px;  font-size: 17px;">BOOKS</a></li>
                     <!--<li><a href="feedback.php"   style= "margin-top: 15px;  font-size: 15px;">CATEGORY </a> -->
                     <li>
-                        <div class="dropdown" style= "margin-top: 7px;  font-size: 15px;">
+                        <div class="dropdown" style= "margin-top: 13px;  font-size: 15px;">
                             <button onclick="myFunction()" class="dropbtn">CATEGORY </button>
                             <div id="myDropdown" class="dropdown-content">
                                 <a href="nextpagelife.php">Life Style</a>

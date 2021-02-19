@@ -17,7 +17,8 @@
 		.form-control
 		{
 			
-			width:250px;
+			max-width:250px;
+			width: 250vw;
 			height: 38px;
 		}
 		.form1
@@ -39,7 +40,7 @@
 			color: black;
 		}
 
-		@media only screen and (min-width:280px){
+		@media only screen and (min-width:280px) and (max-width: 768px){
 			body{
 
 			background-image: url("images/edit.jpg");
@@ -51,7 +52,8 @@
 		{
 			position:center;
 			display:block;
-			width:250px;
+			max-width:250px;
+			width:25vw;
 			height: 38px;
 		}
 		.form1

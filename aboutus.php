@@ -11,6 +11,7 @@ include "connection.php";
     <link rel="stylesheet" href="aboutStyles.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
     <style type="text/css">
               body
               {
@@ -47,7 +48,6 @@ include "connection.php";
             margin-left:300px;
             width:90vw;
         }
-
         .h2{
             color: red;
             font-size: 20px;
@@ -130,9 +130,8 @@ include "connection.php";
         }
 
 }
-        
- </style>
-</head>
+           </style>
+
 
 <body>
     <div class="aboutsec" >
