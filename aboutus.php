@@ -8,7 +8,7 @@ include "connection.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="aboutStyles.css">
+   <!-- <link rel="stylesheet" href="aboutStyles.css">  -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
@@ -16,12 +16,13 @@ include "connection.php";
               body
               {
                   background-image: url("images/about.jpg");
+
                   
               }
            
               .aboutsec
               {
-                  display: none;
+                  
                   padding: 30px;
                   margin: -1px auto;   /* automatically resize the position */
                   max-width:900px;
@@ -90,15 +91,25 @@ include "connection.php";
     background:#3B5998;
     color: #fff;
 }
+    @media only screen and (min-width: 280px)and (max-width: 768px){
 
-@media only screen and (min-width:280px){
+              body
+              {
+                  background-image: url("images/about.jpg");
+
+
+                 background-size: cover;
+			     background-position: center center;
+
+              }
+
               .aboutsec
               {
                   display:block;
                   padding: 30px;
                   margin: -1px auto;   /* automatically resize the position */
-                  width:900px;
-                  height: 1100px;
+                  max-width: 900px;
+                 height: 1100px;
                   background-color: black;
                   opacity: .8;
                   color: white;
@@ -117,7 +128,7 @@ include "connection.php";
               .h1{
                
                 font-size:50px; 
-                margin-left:300px;
+                margin-left:300%;
                 }
                 .h2{
                    
@@ -125,7 +136,7 @@ include "connection.php";
             font-size: 25px;
             line-height: 21px;
             margin-top: -1px;
-            margin-left: 200px;
+            margin-left: 20vw;
             font-style: italic;
         }
 

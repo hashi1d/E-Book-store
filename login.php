@@ -23,11 +23,11 @@ include "connection.php";
      
 	 .wrapper   /*box */
 			   {
-				   display:none;
+				  
 				   padding: 10px;
 				   margin: -1px auto;   /* automatically resize the position */
-				   width:800px;
-				   height: 630px;
+				   max-width:800px;
+				   height: 700px;
 				   background-color: black;
 				   opacity: .7;
 				   color: white;
@@ -36,27 +36,65 @@ include "connection.php";
 			   } 
 			   .form-control     /* form styling */
 			   {   
-				   display:none;
+				   
 				   height: 50px;
-				   width: 40%;
+				   max-width: 300px;
+				   width:30vw;
 				   margin-left: 250px;
 				   
 			   }
-			
+
+			   .h1{
+				text-align: center; 
+				font-size: 35px;  
+				color: red;
+				font-family: lucida console; 
+				margin-left:-10px;
+			   }
+			   .h1z{
+				text-align: center; 
+				font-size: 25px;
+				margin-left:-20px;
+			   }
+			 .a{
+			     color: white; 
+				 margin-left:35%;
+			 }
+			 .a2{
+				color: white;
+				margin-left:35%;
+			 }
 			   .scroll
 			   {
-				   display:none;
+				  
 				   width: 100%;
 				   height: 300px;
 				   overflow: auto;
 			   }
-			   @media only screen and (min-width:280px){
+
+
+			   .btn-default{
+				   margin-left: 250px;
+			   }
+
+			   .alert{
+				width : 700px;  
+				margin-left:50px;
+			   }
+			   @media only screen and (min-width:280px) and (max-width:768px) {
+				body{
+				background-image: url("images/lo1.jpg");
+				background-size: cover;
+			     background-position: center center;
+				}
+
+
 				.wrapper   /*box */
 			   {
 				   display:block;
 				   padding: 10px;
 				   margin: -1px auto;   /* automatically resize the position */
-				   width:800px;
+				   max-width:800px;
 				   height: 630px;
 				   background-color: black;
 				   opacity: .7;
@@ -68,10 +106,31 @@ include "connection.php";
 			   {
 					display:block;
 				   height: 50px;
-				   width: 40%;
-				   margin-left: 250px;
+				   max-width: 300px;
+				   width:30vw;
+				   margin-left: 150px;
 				   
 			   }
+			   .h1{
+				text-align: center; 
+				font-size: 35px;  
+				color: red;
+				font-family: lucida console; 
+				margin-left:-10px;
+			   }
+			   .h1z{
+				text-align: center; 
+				font-size: 25px;
+				margin-left:-20px;
+			   }
+			   .a{
+			     color: white; 
+				 margin-left:35%;
+			 }
+			 .a2{
+				color: white;
+				margin-left:35%;
+			 }
 			
 			   .scroll
 			   {
@@ -80,8 +139,14 @@ include "connection.php";
 				   height: 300px;
 				   overflow: auto;
 			   }
+			   .btn-default{
+				   margin-left: 150px;
+			   }
 
-
+			   .alert{
+				width : 150px;  
+				margin-left:50px;
+			   }
 			   }
 
 
@@ -103,11 +168,11 @@ include "connection.php";
         
 	
 <div class="box1">
-<h1 style="text-align: center; font-size: 35px;  color: red;font-family: lucida console; margin-left:-10px; ">
+<h1 class= "h1">
 E-BOOK STORE
 </h1>
 <br>
-<h1 style="text-align: center; font-size: 25px; margin-left:-20px;">Sign In </h1>
+<h1 class= "h1z">Sign In </h1>
 <br>
 <form name="login" action="" method="post">
 	<div class="login">
@@ -119,17 +184,18 @@ E-BOOK STORE
 	<input class = "form-control" type="password" name="password" placeholder="password" required = "">
 	<br><br>
 	<br><br>
-	<input  class="btn btn-default" style= "margin-left: 250px;" type="submit" name = "submit" value="Login" href = "index.php">
+	<input  class="btn btn-default"  type="submit" name = "submit" value="Login" href = "index.php">
 </form>
 <p style="color: white; padding-left: 15px;">
 <br>
 <br>
 <br>
 <br>
-<a style="color: white; margin-left:230px;" href="updates.php"> Forgot password?</a>
-&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-
-New to E-Book Store? &nbsp <a style="color: white;" href="register.php"> Sign Up</a>
+<a class = "a" href="updates.php"> Forgot password?</a>
+<br>
+<br>
+<br>
+ <a class = "a2"  href="register.php"> New to E-Book Store? &nbsp Sign Up</a>
 </p>
 
 
@@ -158,7 +224,7 @@ if( $count == 0)
   <script type ="text/javascript">
   alert("reg first");
   </script>  -->
-  <div class = "alert alert-danger" style = "width : 700px;  margin-left = 300px;">
+  <div class = "alert alert-danger" clas= "alert">
   <strong> The username & password doesn't match/Signup first </strong>
 </div>
 

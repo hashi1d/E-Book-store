@@ -1,11 +1,11 @@
 <?php
 
 
-include "headerthird.php";
+include "topnav.php";
 include "connection.php";
 
 ?>
-<!  DOCTYPE html>
+<! DOCTYPE html>
 <html>
 <head>
 <title>
@@ -16,12 +16,13 @@ body{
 
 height :650px;
 background-image:url("images/pass.jpg");
+background-repeat: no-repeat;
 
 }
 
 .wrapper{
     margin: 0 auto ;
-    width: 410px;
+    max-width: 410px;
      height : 440px;
      opacity : .8;
      background-color : black;
@@ -32,15 +33,29 @@ background-image:url("images/pass.jpg");
 }
 
 .form-control{
-    width : 250px;
+    max-width : 250px;
+    width: 25vw;
+    display:block;
+    height: 27px;
 }
 
+.h1{
+  text-align: center; 
+  padding: 20px; 
+  font-size: 35px;
+   font-family: italic; 
+}
 
+.h2{
+  text-align: center; 
+  font-size: 20px; 
+  font-family: italic;
+}
 
-@media only screen and (min-width:280px){
+@media only screen and (min-width:280px) {
   body{
 
-height :650px;
+
 background-image:url("images/pass.jpg");
 background-image: no-repeat;
 background-size: cover;
@@ -50,7 +65,7 @@ background-position: center center;
 
 .wrapper{
     margin: 0 auto ;
-    width: 400px;
+    max-width: 400px;
      height : 410px;
      opacity : .8;
      background-color : black;
@@ -61,10 +76,25 @@ background-position: center center;
 }
 
 .form-control{
-    width : 250px;
+    max-width:250px;
+    width : 25vw;
+    display:block;
+    height: 27px;
+    position: center;
 }
 
+.h1{
+  text-align: 50%; 
+  padding: 20px; 
+  font-size: 35px;
+   font-family: italic; 
+}
 
+.h2{
+  text-align: center; 
+  font-size: 20px; 
+  font-family: italic;
+}
 
 }
 </style>
@@ -73,8 +103,8 @@ background-position: center center;
 <div class= "wrapper">   <!-- form is inside the box -->
 
 <div style = "text-align:center;">
-<h1 style = "text-align: center; padding: 20px; font-size: 35px; font-family: italic; " >  E-BOOK STORE </h1>
-<h1 style = "text-align: center; font-size: 20px; font-family: italic; " >  Change password </h1>
+<h1 class = "h1">  E-BOOK STORE </h1>
+<h2 class = "h2"  >  Change password </h1>
 
 </div>
 <div  style ="padding-left:80px";>   <!-- used another div before form to make changes only inside form, take buttons/labels middle -->

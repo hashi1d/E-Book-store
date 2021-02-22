@@ -116,7 +116,7 @@
                 <div class="navbar-header">
                     <div class="logo">
                         <!--<h6 class="logo-header"  style="color: white; font-size: 16px; line-height: 21px; margin-top: 2px;  font-style: italic">Find the next book in your list</h6> -->
-                        <img class = "img" style = "margin-left: -30px;"src="images/logo.jpg" >
+                        <img class = "img" style = "margin-left: -30px;"src="images/navlo.jpg" >
                     </div>
                    <!-- <a class="navbar-brand active" href="#" style= "color:blue; margin-left:125px; margin-top: 25px; font-size: 25px;">E-book Store</a> -->
                 </div>

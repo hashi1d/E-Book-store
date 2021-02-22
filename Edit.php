@@ -18,7 +18,7 @@
 		{
 			
 			max-width:250px;
-			width: 250vw;
+			width: 25vw;
 			height: 38px;
 		}
 		.form1
@@ -39,12 +39,16 @@
 			text-align: center;
 			color: black;
 		}
+		.btn-default{
+		
+		}
 
 		@media only screen and (min-width:280px) and (max-width: 768px){
 			body{
 
 			background-image: url("images/edit.jpg");
 			background-size:cover;
+			background-position: center center;
 
         }
 			
@@ -59,7 +63,7 @@
 		.form1
 		{   position:center;
 			display:block;
-			margin:0 540px;
+			margin:0 37%;
         
 		}
 		label
@@ -75,7 +79,10 @@
 			text-align: center;
 			color: black;
 		}
-
+		.btn-default{
+			margin-left: -100px;
+		
+	}
 
 		}
 		

@@ -17,8 +17,8 @@
 	 }
  		.wrapper
  		{
-			
- 			width: 300px;
+			max-width:300px;
+ 			width: 30vw;
  			margin: 0 auto;
 			 color: black;
 
@@ -34,7 +34,9 @@
 	     }
  			     .wrapper{
 				display:block;
- 				 width: 300px;
+				max-width:300px;
+ 				width: 30vw;
+ 				 
  				 margin: 0 auto;
 				 color: black;
 
@@ -42,7 +44,7 @@
 		 }
 
 			 }	
-			 @media only screen and (min-height:640px){
+			/* @media only screen and (min-height:640px){
 
 
 				body{
@@ -60,7 +62,7 @@
 				}
 
 }	
-
+*/
 
  	</style>
  </head>

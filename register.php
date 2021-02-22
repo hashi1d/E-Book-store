@@ -23,10 +23,10 @@ include "connection.php";
      }
     .wrapper   /*box */
               {
-                display:none;
+                
                   padding: 10px;
                   margin: -1px auto;   /* automatically resize the position */
-                  width:800px;
+                  max-width:800px;
                   height: 820px;
                   background-color: black;
                   opacity: .8;
@@ -35,27 +35,39 @@ include "connection.php";
               } 
               .form-control     /* form styling */
               {
-                display:none;
+               
                   height: 50px;
-                  width: 40%;
+                  max-width: 300px;
+                  width:30vw;
                  margin-left:240px; 
               }
+              .btn-default{
+                margin-left:357px;
+
+              }
+              
               .scroll
               {
-                display:none;
+                
                   width: 100%;
                   height: 300px;
                   overflow: auto;
               }
 
-              @media only screen and (min-width:280px){
+              @media only screen and (min-width:280px) and (max-width:768px){
+                body{
+                  background-image: url("images/login.jpg");
+                  background-size: cover;
+                  background-position: center center;
+
+              }
              
                 .wrapper   /*box */
               {
-                display:block;
+               
                   padding: 10px;
                   margin: -1px auto;   /* automatically resize the position */
-                  width:800px;
+                  max-width:800px;
                   height: 820px;
                   background-color: black;
                   opacity: .8;
@@ -64,14 +76,19 @@ include "connection.php";
               } 
               .form-control     /* form styling */
               {
-                display:block;
+                
                   height: 50px;
-                  width: 40%;
-                 margin-left:240px; 
+                  max-width: 300px;
+                  width:30vw;
+                  margin-left:150px; 
+              }
+              .btn-default{
+                margin-left:150px;
+
               }
               .scroll
               {
-                display:block;
+                
                   width: 100%;
                   height: 300px;
                   overflow: auto;
@@ -130,7 +147,7 @@ include "connection.php";
         <br><br>
         <input class = "form-control"  type="text" name="contact" placeholder="contact" required = "">
         <br><br>
-        <input  class="btn btn-default" style = "margin-left:357px; " type="submit" name = "submit" value="Sign up">
+        <input  class="btn btn-default"  type="submit" name = "submit" value="Sign up">
     </form>
     
 </div>

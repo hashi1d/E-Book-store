@@ -160,7 +160,7 @@ q {font-style: italic; color: #fff}
 .column {
   float: center;
   max-width: 500px;
-  width:50vw;
+  width:100vw;
   height: 100%;
   padding: 150px;
 }

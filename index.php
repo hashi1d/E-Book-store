@@ -1,7 +1,9 @@
 
 <?php
-  include "topforindex2.php";
 	include "connection.php";
+ include "topforindex2.php";
+ //include "topforindex.php";
+
 	
 ?>
 <!DOCTYPE html>
@@ -62,7 +64,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 </header>
 
 <!-- Grid -->
-<div class="w3-row"  style= "margin-top: 8%;">
+<div class="w3-row" style= "margin-top: 8%;">
 
 <!-- Blog entries -->
 <div class="w3-col l8 s12">
@@ -71,7 +73,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     <img src="images/bi.jpg" alt="Nature" style="width:100%">
     <div class="w3-container">
       <h3><b>What is E-bok store?</b></h3>
-      <h5>Today a reader;  Tomorrow a leader!! <span class="w3-opacity"></span></h5>
+      <h5>Today a reader;  Tomorrow a leader!!! <span class="w3-opacity"></span></h5>
     </div>
 
     <div class="w3-container">
