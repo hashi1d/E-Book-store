@@ -25,9 +25,10 @@
     	}
     	.wrapper
     	{
+		
     		padding: 10px;
     		margin: -1px auto;
-    		width:900px;
+    		max-width:900px;
     		height: 600px;
     		background-color: black;
     		opacity: .8;
@@ -35,25 +36,74 @@
     	}
     	.form-control
     	{
+			display:block;
     		height: 70px;
-    		width: 60%;
+    		width: 80vw;
+			max-width: 800px;
     	}
     	.scroll
     	{
+			
     		width: 100%;
     		height: 300px;
     		overflow: auto;
+		}
+		.h4{
+			width:90vw;
+		}
+		
+		@media only screen and (min-width: 280px)and (max-width: 768px) {
+			body
+    	{
+    		background-image: url("images/feedback2.jpg");
+			background-size: cover;
+			background-position: center center;
     	}
+
+
+
+			.wrapper
+    	{
+			display:block;
+    		padding: 10px;
+    		margin: -1px auto;
+    		max-width:900px;
+    		height: 600px;
+    		background-color: black;
+    		opacity: .8;
+    		color: white;
+    	}
+    	.form-control
+    	{
+			display:block;
+    		height: 70px;
+    		width: 80vw;
+			max-width: 800px;
+    	}
+		.h4{
+			width:90vw;
+		}
+    	.scroll
+    	{
+			display:block;
+    		width: 100%;
+    		height: 300px;
+    		overflow: auto;
+		}
+		}
 
     </style>
 </head>
 <body>
 
 	<div class="wrapper">
-		<h4>If you have any suggesions or questions please comment below.</h4>
+		<h4 class = "h4">If you have any suggesions or questions please comment below.</h4>
 		<form style="" action="" method="post">
 			<input class="form-control" type="text" name="comment" placeholder="Write something..."><br>	
-			<input class="btn btn-default" type="submit" name="submit" value="Comment" style="width: 100px; height: 35px;">		
+			<input class="btn btn-default" type="submit" name="submit" value="Comment" style="width: 100px; height: 35px;">	<br>
+			<br>
+	
+			
 		</form>
 	
 <br><br>

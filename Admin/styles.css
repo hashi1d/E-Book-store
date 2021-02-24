@@ -1,10 +1,4 @@
-/*
-html5doctor.com Reset Stylesheet
-v1.6.1
-Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com
-Twitter: @rich_clark
-*/
+
 
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -120,25 +114,25 @@ input, select {
   footer{
       height: 82px;
       width: 1364px;
-      background-color: black;
+      background-color:black;
   }
 
   li a{
       color: blanchedalmond;
-      text-decoration: none;      /*no under line for navigation bars*/
+      text-decoration: none;      /*no under line for navigation tabs*/
   }
 
   nav{
 
     float: right;
-    word-spacing: 10px;
-    padding: 20px;
+    word-spacing: 5px;
+    padding: 50px;
   }
 
   nav li 
 	{
 		display: inline-block;
-		line-height: 80px;
+		line-height: 30px;
 	}
 
 
@@ -149,7 +143,7 @@ input, select {
        
   }
   .logo img{
-      height: 120 px;
+      height: 120px;
       width: 120px;
       padding-top: 30px;
       padding-left: 20px;
@@ -157,7 +151,14 @@ input, select {
 
 
 .box{
-     color: black
+     color: black;
+     width: 450px;
+	background-color: #030002;
+	margin: 70px auto;
+	opacity: 6;
+	color: white;
+
+
 }
   
     /* ---------------------------styles for student_login-----------------*/
@@ -180,3 +181,66 @@ input, select {
         padding-left: 20px;
     }
   
+    /*-------------------------book1 page styling for search button  ------ */
+
+
+    .main{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50% , 50%);
+	background: black;
+	height: 40px;
+	border-radius: 40px;
+	padding: 10px;
+}
+input{
+	 border: 3px solid black;
+	 height: 40px;
+	 width: 300px;
+	 border-radius: 50px;
+	 padding: 0px 10px;
+	 
+
+}
+
+.search-btn{
+
+	color: #1da1f3;
+	float: right;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #2f3640;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+.main:hover > .search-txt{
+
+	width: 240px;
+	padding: 0 6px;
+}
+
+.main:hover > .search-btn{
+
+	background: white;
+}
+.search-txt{
+
+	border: none;
+	background: none;
+	outline: none;
+	float: left;
+	padding: 0px;
+	color: white;
+	font-size: 16px;
+	transition: 0.4%;
+    line-height: 40px;
+	width: 0px;
+	transition: 0.5s;
+
+
+}

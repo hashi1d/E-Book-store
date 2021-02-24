@@ -8,30 +8,30 @@ include "connection.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="aboutStyles.css">
+   <!-- <link rel="stylesheet" href="aboutStyles.css">  -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
     <style type="text/css">
               body
               {
                   background-image: url("images/about.jpg");
+
                   
               }
-          
-
-             
+           
               .aboutsec
               {
+                  
                   padding: 30px;
                   margin: -1px auto;   /* automatically resize the position */
-                  width:900px;
+                  max-width:900px;
                   height: 1100px;
                   background-color: black;
                   opacity: .8;
                   color: white;
               }
-
-              .btn { 
+             /* .btn { 
             cursor: pointer; 
             border: 1px solid #3498db; 
             background-color: transparent; 
@@ -41,9 +41,22 @@ include "connection.php";
             font-size: 1.5em; 
             box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); 
             position: right;
-        } 
-
-
+        }   */
+              
+        .h1{
+            
+            font-size:40px; 
+            margin-left:300px;
+            width:90vw;
+        }
+        .h2{
+            color: red;
+            font-size: 20px;
+            line-height: 21px;
+            margin-top: -1px;
+            margin-left: 200px;
+            font-style: italic;
+        }
         .fa{
     margin: 0px 5px;
     padding:2px;  /* take text inside to the circle */
@@ -78,18 +91,67 @@ include "connection.php";
     background:#3B5998;
     color: #fff;
 }
-        
-              </style>
-</head>
+    @media only screen and (min-width: 280px)and (max-width: 768px){
+
+              body
+              {
+                  background-image: url("images/about.jpg");
+
+
+                 background-size: cover;
+			     background-position: center center;
+
+              }
+
+              .aboutsec
+              {
+                  display:block;
+                  padding: 30px;
+                  margin: -1px auto;   /* automatically resize the position */
+                  max-width: 900px;
+                 height: 1100px;
+                  background-color: black;
+                  opacity: .8;
+                  color: white;
+              }
+            /*  .btn { 
+            cursor: pointer; 
+            border: 1px solid #3498db; 
+            background-color: transparent; 
+            height: 50px; 
+            width: 90px; 
+            color: #3498db; 
+            font-size: 1.5em; 
+            box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); 
+            position: right;
+        } */
+              .h1{
+               
+                font-size:50px; 
+                margin-left:300%;
+                }
+                .h2{
+                   
+            color: green;
+            font-size: 25px;
+            line-height: 21px;
+            margin-top: -1px;
+            margin-left: 20vw;
+            font-style: italic;
+        }
+
+}
+           </style>
+
 
 <body>
     <div class="aboutsec" >
     
-            <h1 style = "font-size:40px; margin-left:300px"> About Us</h1>
+            <h1 class = "h1" > About Us</h1>
             <br>
             <p class="text" style="color: red; font-size: 20px; line-height: 21px; margin-top: -1px; margin-left: 130px; font-style: italic">
                 " Something very magical can happen when you read a good book.
-                     <br><h2 style="color: red; font-size: 20px; line-height: 21px; margin-top: -1px; margin-left: 200px; font-style: italic">They let you travel without moving your feet"</h2>
+                     <br><h2 class = "h2 "style="color: red; font-size: 20px; line-height: 21px; margin-top: -1px; margin-left: 200px; font-style: italic">They let you travel without moving your feet"</h2>
             </p>
    
             <br> <br> 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-  type="text/css"
+
     <title>Star Rating Form | CodingNepal</title>
     <link rel="stylesheet" href="rateing.css"> 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>

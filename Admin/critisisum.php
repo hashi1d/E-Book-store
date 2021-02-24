@@ -1,7 +1,8 @@
 <?php
   
   include "connection.php";
-  session_start();
+  include "topnav.php";
+  //session_start();
 
   ?>
 
@@ -23,26 +24,102 @@
               }
               .wrapper   /*box */
               {
+                
                   padding: 10px;
                   margin: -1px auto;   /* automatically resize the position */
-                  width:900px;
-                  height: 300px;
+                  max-width:900px;
+                  height: 550px;
                   background-color: black;
                   opacity: .8;
                   color: white;
               } 
               .form-control     /* form styling */
               {
+                
                   height: 50px;
-                  width: 40%;
+                  max-width: 800px;
+                  width:80vw;
+                  
               }
               .scroll
               {
+                
                   width: 100%;
                   height: 300px;
                   overflow: auto;
               }
-      
+              
+              .h1{
+                text-align:center ;
+                color: red;
+                font-size: 35px;
+
+              }
+
+              .h2{
+                text-align:center;
+                font-size: 30px;
+              }
+
+              .p{
+                color:#fff;
+                font-size: 14px;
+              }
+              @media only screen and (min-width: 280px) and (max-width: 768px){
+
+                body
+              {
+                  background-image: url("images/c.jpg");
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-position: center center;
+              }
+                .wrapper   /*box */
+              {
+                  
+                  padding: 10px;
+                  margin: -1px auto;   /* automatically resize the position */
+                  max-width:900px;
+                  height: 550px;
+                  background-color: black;
+                  opacity: .8;
+                  color: white;
+              } 
+              .form-control     /* form styling */
+              {
+              
+                  height: 50px;
+                  max-width: 800px;
+                  width:80vw;
+                  
+              }
+              .scroll
+              {
+                 
+                  width: 100%;
+                  height: 300px;
+                  overflow: auto;
+              }
+              .h1{
+                text-align:center ;
+                color: red;
+                font-size: 40px;
+
+              }
+              .h2{
+                text-align:center;
+                font-size: 35px;
+              }
+              .p{
+                color:#fff;
+                font-size: 14px;
+                
+              }
+
+              }
+              
+              
+
           </style>
 
         </head>
@@ -50,15 +127,15 @@
                              <!-- creating box -->
             <div class="wrapper">
                     
-                <h1 style = "text-align:center ;">Critisisum Zone</h1>
-                <h2 style = "text-align:center;"> Publish your openions about books</h2>
+                <h1  class = "h1 ">Idea Zone</h1>
+                <h2 class = "h2 "> Publish your opinions about books</h2>
                 <br>
                 <br>
             
-                <p style ="font-color:red;"> Providing critisisums for a book that you read is very interesting habit. These ideas are based on how reader feel about the book.and how those characters in the book move with the real lives. 
+                <p class = "p" > Providing ideas for a book that you read is very interesting habit. These ideas are based on how reader feel about the book.and how those characters in the book move with the real lives. 
                     <br> You all are welcome to share your hidden deep ideas about these books that you read..This will be a good platform to share your thoughts and feeling about books....
                 </p>
-                </div>
+                
                 <br>
                 <br>
                 <br>
@@ -69,18 +146,18 @@
         
         <input class="form-control" type="text" name="Status" placeholder="Status:"><br>  -->
         
-        <input class="form-control" type="text" name="comment" placeholder="Share your thougts aboyt lit:"><br>
+        <input class="form-control" type="text" name="comment" placeholder="Share your thougts aboyt literature:"><br>
 
 		<input class="btn btn-default" type="submit" name="submit" value="publish" style="width: 100px; height: 35px;">	
     
         
               </form> 
               </div>
-              </div>
+            <div class="scroll">
               <?php
               if(isset($_POST['submit']))
               {
-                  $sql="INSERT INTO `critisisum` VALUES('', 'admin',' $_POST[comment]');" ; //session used for the person who logged
+                  $sql="INSERT INTO `critisisum` VALUES('', '$_SESSION[login_user]',' $_POST[comment]');" ; //session used for the person who logged
                 //login_user is my session variable name
                   /* form name = to this */
                   if(mysqli_query($db,$sql))  //if thi query runs ie it the value is inserted --display this
@@ -118,6 +195,7 @@
                   echo "</table>";
               }
           ?>
+      </div>
       </div>
       </div>
 

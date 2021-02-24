@@ -7,7 +7,7 @@ if(!$db){
     die("connection faild :" . mysqli_connect_error());
 }
 
-echo "successfull";
+//echo "successfull";
 
 ?>
 

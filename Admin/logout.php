@@ -1,10 +1,10 @@
 <?php
-session_start();
-if(isset($_SESSION['login_user']))
+session_start();   //to use session variable
+if(isset($_SESSION['login_user']))     // if session variable has some value ie some one loged
 {
-unset($_SESSION['login_user']);
+unset($_SESSION['login_user']);      //need to logout that user
 
 }
-header("index.php");
+header("location: index.php");
 
 ?>

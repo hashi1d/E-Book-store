@@ -7,9 +7,14 @@
 <head>
 
 	<title>Books</title>
+	<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
 	<style type = "text/css">
 
+
 	.srch{
+		display:none;
 		padding-left: 800px;
 		padding-top : -27px;
 		color: black;
@@ -24,11 +29,40 @@
  
 }
 .del{
+		display:none;
 	     padding-left: 1000px;
 		color: red;
 
 }
+.trend1
+	{
+		display:none;
+		width: 100%; 
+		height: 50px; 
+		margin-top: -20px;
+	}
+	.trend2
+	{
+		display:none;
+		background-color: #032e5a; 
+		padding:10px;
+		 width: 10%; 
+		 height:50px; 
+		 float:left;
+	}
+	.trend3
+	{
+		display:none;
+		background-color: #1b3e22; 
+		width:90%; 
+		height: 50px; 
+		float: left;
+		pading:10px;
+	}
+
+
 .sidenav {
+	display:none;
   margin-top: 148px;  /*to see the top nav well without covering  */
   height: 100%;
   width: 0;
@@ -43,6 +77,7 @@
 }
 
 .sidenav a {
+	display:none;
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 15px;
@@ -52,10 +87,12 @@
 }
 
 .sidenav a:hover {
+	display:none;
   color: #f1f1f1;
 }
 
 .sidenav .closebtn {
+	display:none;
   position: absolute;
   top: 0;
   right: 25px;
@@ -74,18 +111,107 @@
 }
 	
 .one:hover{
+	display:none;
     color:white;
 	width:300px;
 	height:50px;
 	background-color: #044a44;
 
 }
+
+@media screen and (min-width: 280px) {
+	.trend1
+	{
+		display:block;
+		width: 100%; 
+		height: 50px; 
+		margin-top: -20px;
+	}
+	.trend2
+	{
+		display:block;
+		background-color: #032e5a; 
+		padding:10px;
+		 width: 10%; 
+		 height:50px; 
+		 float:left;
+	}
+	.trend3
+	{
+		display:block;
+		background-color: #1b3e22; 
+		width:90%; 
+		height: 50px; 
+		float: left;
+		pading:10px;
+	}
+
+	.del{
+		display:block;
+	     padding-left: 1000px;
+		color: red;
+
+		}
+	.srch{
+		display:block;
+		padding-left: 800px;
+		padding-top : -27px;
+		color: black;
+	}
+
+	.sidenav {
+  display:block;
+  margin-top: 148px;  /*to see the top nav well without covering  */
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+	display:block;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+	display:block;
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+	display:block;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.one:hover{
+	display:block;
+    color:white;
+	width:300px;
+	height:50px;
+	background-color: #044a44;
+
+}
+}
 	</style>
 	
   <meta charset="utf-8">
  
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"> 
+  <!--<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"> -->
  <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
 	<meta charset="utf-8">
   <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -102,11 +228,11 @@
 		
 	?>
 
-		<div style = "width: 100%; height: 50px; margin-top: -20px;">
-		<div style = "background-color: #032e5a; padding:10px; width: 10%; height:50px; float:left;">
+		<div  class= "trend1">
+		<div  class= "trend2">
 		<h3 style = "color:red; margin-top:0px;">Trending </h3>
 </div>
-<div style = "background-color: #1b3e22; width:90%; height: 50px; float: left; pading:10px;">
+<div class= "trend3">
 <table>
 
 		<?php
@@ -174,10 +300,11 @@ function closeNav() {
 <div class = "srch">
     <form class = "navbar-form" method = "post" name = "form1">	
             <input class = "form-control" type = "text" name = "search" placeholder= "serch your book" required = ""  style ="float: left ; color: yellow;"> <!-- here flt left is for getting button near to the other srch one -->
-            <button style = "background color: yellow;" type  = "submit" name = "submit" class = "btn btn-default">
+            <button style = "background color: black;" type  = "submit" name = "submit" class = "btn btn-default">
 			<span class = "glyphicon glyphicon-search"></span>   Search 
 			</button> 
 			<br>
+			
 			<!--<label for= "Category">Select the Category </label>
 			<select name= "Category">
 				
@@ -194,15 +321,16 @@ function closeNav() {
 
  
 </form>
-
-<!-- del next-->
-<form class = "navbar-form" method = "post" name = "form1">
-<input class = "form-control" type = "text" name = "bid" placeholder= "Enter Book ID to delete" required = ""  style ="float: left"> <!-- here flt left is for getting button near to the other srch one -->
-<button style = "background color: blue;" type  = "submit" name = "submit1" class = "btn btn-default">
+<!-- del next -->
+<!--<form class = "navbar-form" method = "post" name = "form1">
+<input class = "form-control" type = "text" name = "bid" placeholder= "Enter Book ID to delete" required = ""  style ="float: left">  here flt left is for getting button near to the other srch one -->
+<!--<button style = "background color: blue;" type  = "submit" name = "submit1" class = "btn btn-default">
 Delete
 </button>
-</form>
-</div>
+</form> 
+-->
+</div> 
+
 <!-- request book 
 
 
@@ -221,7 +349,7 @@ Delete
 	<?php
 	if(isset($_POST['submit']))
 	{
-		$q = mysqli_query($db, "SELECT *from book WHERE bname like '%$_POST[search]%' and Category = 'echo $_POST[Category]'"); //here  after & for setection categories
+		$q = mysqli_query($db, "SELECT *from book WHERE bname like '%$_POST[search]%'"); //here  after & for setection categories
 		if(mysqli_num_rows($q)==0)
 		{
 			echo "sorry! No book found..";
@@ -292,8 +420,8 @@ Delete
 		     }
 		echo "</table>";
 	}
-			   //this is for delete bar 
-			   if(isset($_POST['submit1']))
+			  //this is for delete bar 
+			 if(isset($_POST['submit1']))
 			   {
 				   if(isset($_SESSION['login_user'])) //if the user is loged first
 				   {
@@ -314,7 +442,8 @@ Delete
 				   }
 			   }
  
-		   ?>
+		   ?> 
+		
          </div>  <!-- here i used all the code inside main div , bcz of that, when side nav open table gets small -->
 		</body>
 		</html>			

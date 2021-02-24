@@ -18,27 +18,81 @@ include "connection.php";
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
     <style type="text/css">
      
+     body{
+        background-image: url("images/login.jpg");
+     }
     .wrapper   /*box */
               {
+                
                   padding: 10px;
                   margin: -1px auto;   /* automatically resize the position */
-                  width:900px;
-                  height: 950px;
+                  max-width:800px;
+                  height: 820px;
                   background-color: black;
                   opacity: .8;
                   color: white;
+                  
               } 
               .form-control     /* form styling */
               {
+               
                   height: 50px;
-                  width: 40%;
-                  
+                  max-width: 300px;
+                  width:30vw;
+                 margin-left:240px; 
               }
+              .btn-default{
+                margin-left:357px;
+
+              }
+              
               .scroll
               {
+                
                   width: 100%;
                   height: 300px;
                   overflow: auto;
+              }
+
+              @media only screen and (min-width:280px) and (max-width:768px){
+                body{
+                  background-image: url("images/login.jpg");
+                  background-size: cover;
+                  background-position: center center;
+
+              }
+             
+                .wrapper   /*box */
+              {
+               
+                  padding: 10px;
+                  margin: -1px auto;   /* automatically resize the position */
+                  max-width:800px;
+                  height: 820px;
+                  background-color: black;
+                  opacity: .8;
+                  color: white;
+                  
+              } 
+              .form-control     /* form styling */
+              {
+                
+                  height: 50px;
+                  max-width: 300px;
+                  width:30vw;
+                  margin-left:150px; 
+              }
+              .btn-default{
+                margin-left:150px;
+
+              }
+              .scroll
+              {
+                
+                  width: 100%;
+                  height: 300px;
+                  overflow: auto;
+              }
               }
   </style>
 </head>
@@ -75,8 +129,7 @@ include "connection.php";
                     <br>
                 
                     <br>
-                    <br>
-                    <br>
+                    
 
     <form name="login" action="" method="post">
         
@@ -94,7 +147,7 @@ include "connection.php";
         <br><br>
         <input class = "form-control"  type="text" name="contact" placeholder="contact" required = "">
         <br><br>
-        <input  class="btn btn-default" type="submit" name = "submit" value="Sign up">
+        <input  class="btn btn-default"  type="submit" name = "submit" value="Sign up">
     </form>
     
 </div>
