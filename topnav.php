@@ -116,9 +116,9 @@
                 <div class="navbar-header">
                     <div class="logo">
                         <!--<h6 class="logo-header"  style="color: white; font-size: 16px; line-height: 21px; margin-top: 2px;  font-style: italic">Find the next book in your list</h6> -->
-                        <img class = "img" style = "margin-left: -30px;"src="images/navlo.jpg" >
+                        <!-- <img class = "img" style = "margin-left: -30px;"src="images/navlo.jpg" >-->
                     </div>
-                   <!-- <a class="navbar-brand active" href="#" style= "color:blue; margin-left:125px; margin-top: 25px; font-size: 25px;">E-book Store</a> -->
+                   <a class="navbar-brand active" href="#" style= "color:blue;  margin-top: 7px; font-size: 25px;">E-BOOK STORE</a> 
                 </div>
                 <a href="javascript:void(0);" class="icon icon-drop" onclick="responsiveFunction()">
                     <i class="fa fa-bars"></i>
