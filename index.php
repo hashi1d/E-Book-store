@@ -8,7 +8,7 @@
 ?>
 <!DOCTYPE html>
 <html>
-<title>indextry</title>
+<title>index</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -64,7 +64,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 </header>
 
 <!-- Grid -->
-<div class="w3-row" style= "margin-top: 8%;">
+<div class="w3-row" style= "margin-top: 1%;">
 
 <!-- Blog entries -->
 <div class="w3-col l8 s12">
@@ -166,8 +166,8 @@ and is wrapped around the whole page content, except for the footer in this exam
       <h4>Conect</h4>
 
             <a href="https://www.facebook.com/E-book-store-100815678703128/" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-google"></a>
+            <a href="https://twitter.com/EBookReader5" class="fa fa-twitter"></a>
+            <a href="" class="fa fa-google"></a>
             <a href="#" class="fa fa-linkedin"></a>
      
     </p>
