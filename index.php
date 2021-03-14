@@ -64,7 +64,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 </header>
 
 <!-- Grid -->
-<div class="w3-row" style= "margin-top: 1%;">
+<div class="w3-row" style= "margin-top: 0.4%;">
 
 <!-- Blog entries -->
 <div class="w3-col l8 s12">
