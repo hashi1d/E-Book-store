@@ -93,7 +93,7 @@ html {
     <div class="card">
      
       <div class="container">
-        <h2>Steps</h2>
+        <h2  style = "color:blue">Steps</h2>
         <p class="title"></p>
         <p>First you need to <br> sign up in the E-book store. <br> Afert signing up<br> you can enter to the chat-zone using <br>Chat tab <br> </p>
         
@@ -105,7 +105,7 @@ html {
     <div class="card">
      
       <div class="container">
-        <h2>Conditions</h2>
+        <h2  style = "color:blue">Conditions</h2>
         
         <p>Chat-zone is always visited under <br>the administrator<br> Users can share their ideas with each other. But no one can't to share <br>their email or contact number <br>in the chat<br> People who are tring to pass unneccesary <br>massages will be removed from the E-book store </p>
         
@@ -116,7 +116,7 @@ html {
     <div class="card">
      
       <div class="container">
-        <h2>Rules</h2>
+        <h2 style = "color:blue">Rules</h2>
         
         <p>No unneccesary masseges <br>No vertual harresments for others<br> Can't share any contact details </p>
         
