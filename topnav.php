@@ -31,13 +31,13 @@
                 
             }
             .logo{
-                padding-left: 20px;
+                padding-left: -6px;
                 float: left;
                 /*padding-top: 5px; */
                 
             } 
             .logo img{
-                height: 20px;
+                height: 70px;
                 width:  70px;
                
             }
@@ -117,9 +117,9 @@
                 <div class="navbar-header">
                     <div class="logo">
                         <!--<h6 class="logo-header"  style="color: white; font-size: 16px; line-height: 21px; margin-top: 2px;  font-style: italic">Find the next book in your list</h6> -->
-                       <!-- <img class = "img" style = "margin-left: -80px; margin-top: 7px;;"src="images/bkzz.jpeg" > -->
+                       <img class = "img" style = "  margin-top: 10px; " src="images/bklogo.jpg" > 
                     </div>
-                   <a class="navbar-brand active" href="#" style= "color:blue; margin-top: 7px;  font-size: 25px;">E-BOOK STORE</a>
+                   <!--<a class="navbar-brand active" href="#" style= "color:blue; margin-top: 7px;  font-size: 25px;" >E-BOOK STORE</a> -->
                 </div>
                 <a href="javascript:void(0);" class="icon icon-drop" onclick="responsiveFunction()">
                     <i class="fa fa-bars"></i>
