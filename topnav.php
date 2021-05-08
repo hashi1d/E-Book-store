@@ -20,35 +20,41 @@
                 justify-content: space-between;
             }
             .navbar-header {
-                display: flex;
+               display: flex;
                 flex-direction: column; 
-                
-                
+                margin-left: -10px;
             }
-            .logo-header {
+             .logo-header {
                 color: rgb(255 255 255);
                 font-weight: 700;
                 
             }
             .logo{
-                padding-left: -6px;
+               
                 float: left;
                 /*padding-top: 5px; */
                 
             } 
             .logo img{
-                height: 70px;
-                width:  70px;
+                height: 90px;
+                width:  400px;
                
-            }
-            
+            } 
+
             @media screen and (max-width: 768px) {
+
+                .logo img{
+                  
+                height: 90px;
+                width:  200px;
+               
+            } 
                 .navbar-header {
                 display: flex;
                 flex-direction: column;
                 
                 
-            }
+            }  
                 .navbar-nav {
                     display: none;
                 }
@@ -59,6 +65,12 @@
                 }
             }
             @media screen and (min-width: 768px) {
+                .logo img{
+                   
+                height: 90px;
+                width:  400px;
+               
+            } 
                 .icon-drop {
                     display: none;
                 }
@@ -108,18 +120,19 @@
 
             .show {
                 display: block;
-            }
+            }  
         </style>
     </head>
     <body>
         <nav class="navbar navbar-inverse" >
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <div class="logo">
+                   <div class="logo">
                         <!--<h6 class="logo-header"  style="color: white; font-size: 16px; line-height: 21px; margin-top: 2px;  font-style: italic">Find the next book in your list</h6> -->
-                       <img class = "img" style = "  margin-top: 10px; " src="images/bklogo.jpg" > 
-                    </div>
-                   <!--<a class="navbar-brand active" href="#" style= "color:blue; margin-top: 7px;  font-size: 25px;" >E-BOOK STORE</a> -->
+                     <img class = "img"  src="images/e.png" > 
+                     
+          <!-- <a class="navbar-brand active" href="index.php" style= "color: blue;  margin-top: 7px;   font-size: 25px; " >E-BOOK STORE</a> -->
+                </div>
                 </div>
                 <a href="javascript:void(0);" class="icon icon-drop" onclick="responsiveFunction()">
                     <i class="fa fa-bars"></i>
