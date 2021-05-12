@@ -29,7 +29,7 @@ session_start();
 	
             <div class="logo"> <h1 style="color: white; font-size: 15px; line-height: 21px; margin-top: -1px; margin-left: 4px; font-style: italic">Find the next book in your list</h1>
 			
-					<img src="images/bklogo.jpg">
+					<!-- <img src="images/bklogo.jpg"> -->
 
         	<h1 style="color: white;"></h1>
 			<div class = "header stentence">

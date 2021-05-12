@@ -37,7 +37,7 @@
             } 
             .logo img{
                 height: 90px;
-                width:  400px;
+                width:  320px;
                
             } 
 
@@ -68,7 +68,7 @@
                 .logo img{
                    
                 height: 90px;
-                width:  400px;
+                width:  320px;
                
             } 
                 .icon-drop {
@@ -129,7 +129,7 @@
                 <div class="navbar-header">
                    <div class="logo">
                         <!--<h6 class="logo-header"  style="color: white; font-size: 16px; line-height: 21px; margin-top: 2px;  font-style: italic">Find the next book in your list</h6> -->
-                     <img class = "img"  src="images/e.png" > 
+                     <img class = "img"  src="images/B2.png" > 
                      
           <!-- <a class="navbar-brand active" href="index.php" style= "color: blue;  margin-top: 7px;   font-size: 25px; " >E-BOOK STORE</a> -->
                 </div>

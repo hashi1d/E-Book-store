@@ -16,7 +16,7 @@ include "connection.php";
               body
               {
                   background-image: url("images/about.jpg");
-
+                  background-repeat: cover;
                   
               }
            
@@ -95,24 +95,24 @@ include "connection.php";
 
               body
               {
+                
                   background-image: url("images/about.jpg");
-
-
-                 background-size: cover;
-			     background-position: center center;
+                  background-size: cover;
+			      background-position: center center;
 
               }
 
               .aboutsec
               {
+                  display:none;
                   display:block;
                   padding: 30px;
                   margin: -1px auto;   /* automatically resize the position */
-                  max-width: 900px;
-                 height: 1100px;
+                 width: 900px;    
+                  height: 1100px;  
                   background-color: black;
                   opacity: .8;
-                  color: white;
+                  color: white; 
               }
             /*  .btn { 
             cursor: pointer; 
@@ -204,8 +204,8 @@ include "connection.php";
     <br> <br> <br>  
     <h3 style = "color: white; text-align: center; font-size:20px;"> Link us through social media</h3>
     <div style = "margin:12px 400px;" >
-    <a href ="" class = "fa fa-facebook"> </a>
-    <a href ="" class = "fa fa-twitter"> </a>
+    <a href ="https://www.facebook.com/E-book-store-100815678703128/" class = "fa fa-facebook"> </a>
+    <a href ="https://twitter.com/EBookReader5" class = "fa fa-twitter"> </a>
     <a href ="" class = "fa fa-google"> </a>
     <a href ="" class = "fa fa-instagram"> </a>
     <a href ="" class = "fa fa-yahoo"> </a>

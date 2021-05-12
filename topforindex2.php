@@ -75,7 +75,7 @@ body {
 				?>      <!-- closed php crz, nav bar is html tag -->
 			     <nav>
 		
-		
+               
    <a href="logout.php">LOGOUT</a>
   
   <a href="feedback.php">FEEDBACK</a>
@@ -96,7 +96,7 @@ body {
 
 			<nav>
       <a href="contactus.php">HELP</a>
-      <a href="aboutus.php">ABOUT_US</a>
+      <a href="aboutus.php">ABOUT</a>
       <a href="feedback.php">FEEDBACK</a>
           <a href="login.php">SIGNIN</a>
       <a href="register.php">SIGNUP</a>

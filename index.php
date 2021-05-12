@@ -59,7 +59,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 <!-- Header -->
 <header class="w3-container w3-center w3-padding-32"  > 
-  <h1><b> Welcome to the E-Book store</b></h1>
+  <h1> <b>Welcome to the <i>e-b<span style="color:red">Oo</span>k sto<span style="color:red">R</span>e</span></i></b></h1>
   <p>Find the next book in your <span class="w3-tag">list</span></p>
 </header>
 
@@ -80,7 +80,7 @@ and is wrapped around the whole page content, except for the footer in this exam
       <p>This is a platform where people can find the next book in their list easily. Users can wander through their favourite books & expand their book collection easily without any cost This is a grate palce for people who know the value of books to intensify their reading habits.</p>
       <div class="w3-row">
        <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+          <p><button class="w3-button w3-padding-large w3-white w3-border"> <b ><a href = "termsindex.php">READ MORE >>></a></b></button></p>
         </div>  
        <!-- <div class="w3-col m4 w3-hide-small">
           <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
@@ -102,7 +102,7 @@ and is wrapped around the whole page content, except for the footer in this exam
       <p>It’s now easier to jump into discussions with your friends about what they’re reading. Show some love for their latest review, or challenge them to defend why they couldn’t stand your favorite book!</p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+          <p><button class="w3-button w3-padding-large w3-white w3-border" ><b><a href = "chatguidlinesindex.php">READ MORE >>></a></b></button></p>
         </div> 
         <!--<div class="w3-col m4 w3-hide-small">
           <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>

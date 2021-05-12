@@ -1,6 +1,6 @@
 <?php
   include "connection.php";
-  include "topnav.php";
+  include "top.php";
 ?>
 <!DOCTYPE html>
 <html>

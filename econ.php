@@ -1,6 +1,6 @@
 <?php
   include "connection.php";
-  include "headerthird.php";
+  include "top.php";
 ?>
 <!DOCTYPE html>
 <html>

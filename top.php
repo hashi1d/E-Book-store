@@ -37,11 +37,18 @@
                 
             } 
             .logo img{
-                height: 70px;
-                width:   70px;
+                height: 90px;
+                width:   320px;
             }
             
             @media screen and (max-width: 768px) {
+                .logo img{
+                  
+                  height: 90px;
+                  width:  200px;
+                 
+              } 
+
                 .navbar-header {
                 display: flex;
                 flex-direction: column;
@@ -58,6 +65,13 @@
                 }
             }
             @media screen and (min-width: 768px) {
+
+                .logo img{
+                  
+                  height: 90px;
+                  width:  320px;
+                 
+              } 
                 .icon-drop {
                     display: none;
                 }
@@ -116,7 +130,7 @@
                 <div class="navbar-header">
                     <div class="logo">
                         <!--<h6 class="logo-header"  style="color: white; font-size: 16px; line-height: 21px; margin-top: 2px;  font-style: italic">Find the next book in your list</h6> -->
-                        <img class = "img" style = "margin-left: -30px;"src="images/bklogo.jpg" >
+                        <img class = "img" style = "margin-left: -30px;"src="images/B2.png" >
                     </div>
                    <!-- <a class="navbar-brand active" href="#" style= "color:blue; margin-left:125px; margin-top: 25px; font-size: 25px;">E-book Store</a> -->
                 </div>
