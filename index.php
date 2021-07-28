@@ -72,7 +72,7 @@ and is wrapped around the whole page content, except for the footer in this exam
   <div class="w3-card-4 w3-margin w3-white" >
     <img src="images/bi.jpg" alt="Nature" style="width:100%">
     <div class="w3-container">
-      <h3><b>What is E-bok store?</b></h3>
+      <h3><b>What is E-book store?</b></h3>
       <h5>Today a reader;  Tomorrow a leader!!! <span class="w3-opacity"></span></h5>
     </div>
 
@@ -163,7 +163,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     <div class="w3-container w3-white">
     <p><span class="w3-tag w3-black w3-margin-bottom"><a href = "aboutus.php">About Us</a></span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"><a href = "contactus1.php">Help</a></span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"><a href = "termsindex.php">Terms</a></span>
       <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"><a href = "chatguidlinesindex.php">Chat Guidlines</a></span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"><a href = "privacyindex.php">Privacy Policy</a></span> 
-      <h4>Conect</h4>
+      <h4>Connect</h4>
 
             <a href="https://www.facebook.com/E-book-store-100815678703128/" class="fa fa-facebook"></a>
             <a href="https://twitter.com/EBookReader5" class="fa fa-twitter"></a>
