@@ -29,7 +29,7 @@ include "connection.php";
                   max-width:800px;
                   height: 820px;
                   background-color: black;
-                  opacity: .8;
+                  opacity: .9;
                   color: white;
                   
               } 

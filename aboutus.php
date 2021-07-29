@@ -28,7 +28,7 @@ include "connection.php";
                   max-width:900px;
                   height: 1100px;
                   background-color: black;
-                  opacity: .8;
+                  opacity: 0.9;
                   color: white;
               }
              /* .btn { 
